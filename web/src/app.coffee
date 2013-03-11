@@ -17,13 +17,13 @@ app.use express.static(__dirname + '/public')
 # controller
 app.get '/', (req, res) ->
   render req, res, 
-    title: 'Project Name'
+    title: 'CC Admin'
     seed:
       view: 'index'
 
 app.get '/:page', (req, res) ->
   render req, res, 
-    title: 'Project Name'
+    title: 'CC Admin'
     seed:
       view: req.params.page
 

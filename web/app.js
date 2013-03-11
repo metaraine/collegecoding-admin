@@ -30,7 +30,7 @@
 
   app.get('/', function(req, res) {
     return render(req, res, {
-      title: 'Project Name',
+      title: 'CC Admin',
       seed: {
         view: 'index'
       }
@@ -39,7 +39,7 @@
 
   app.get('/:page', function(req, res) {
     return render(req, res, {
-      title: 'Project Name',
+      title: 'CC Admin',
       seed: {
         view: req.params.page
       }

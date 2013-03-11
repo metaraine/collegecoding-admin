@@ -2,7 +2,7 @@
 (function() {
 
   client.views.index = Backbone.View.extend({
-    build: function(data) {
+    build: function() {
       return [
         '#page-index', [
           [
@@ -15,7 +15,19 @@
                     }, 'Project Name'
                   ]
                 ]
-              ], ['hr'], ['.jumbotron', [['h1', 'This project is going to be so awesome!'], ['p.lead', 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.']]], ['hr'], ['.row-fluid.marketing', [['.span6', [['h4', 'Subheading'], ['p', 'Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.'], ['h4', 'Subheading'], ['p', 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.'], ['h4', 'Subheading'], ['p', 'Maecenas sed diam eget risus varius blandit sit amet non magna.']]], ['.span6', [['h4', 'Subheading'], ['p', 'Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.'], ['h4', 'Subheading'], ['p', 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.'], ['h4', 'Subheading'], ['p', 'Maecenas sed diam eget risus varius blandit sit amet non magna.']]]]], ['hr'], [
+              ], ['hr'], ['.jumbotron', [['h1', 'This project is going to be so awesome!'], ['p.lead', 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.']]], ['hr'], [
+                '.row-fluid.marketing', [
+                  [
+                    '.span6', [
+                      ['h4', 'Clients'], [
+                        'ul', this.model.get('clients').map(function(client) {
+                          return ['li', client.Name];
+                        })
+                      ]
+                    ]
+                  ], ['.span6', []]
+                ]
+              ], ['hr'], [
                 '.footer', [
                   [
                     'p', {

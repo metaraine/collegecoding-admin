@@ -1,5 +1,5 @@
 client.views.index = Backbone.View.extend(
-  build: (data) ->
+  build: () ->
     ['#page-index', [
       ['.container-narrow', [
         ['.masthead', [
@@ -13,20 +13,12 @@ client.views.index = Backbone.View.extend(
         ['hr']
         ['.row-fluid.marketing', [
           ['.span6', [
-            ['h4', 'Subheading']
-            ['p', 'Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.']
-            ['h4', 'Subheading']
-            ['p', 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.']
-            ['h4', 'Subheading']
-            ['p', 'Maecenas sed diam eget risus varius blandit sit amet non magna.']
+            ['h4', 'Clients']
+            ['ul', this.model.get('clients').map (client) ->
+              ['li', client.Name]
+            ]
           ]]
           ['.span6', [
-            ['h4', 'Subheading']
-            ['p', 'Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.']
-            ['h4', 'Subheading']
-            ['p', 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.']
-            ['h4', 'Subheading']
-            ['p', 'Maecenas sed diam eget risus varius blandit sit amet non magna.']
           ]]
         ]]
         ['hr']

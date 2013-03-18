@@ -315,7 +315,7 @@ var Creatable = (function() {
 	var plugins = {
 		// insert content as unescaped HTML with { html: true }
 		html: function(el, html) {
-			if(html) {
+			if(html && el.firstChild) {
 				el.innerHTML = el.firstChild.nodeValue;
 			}
 		}

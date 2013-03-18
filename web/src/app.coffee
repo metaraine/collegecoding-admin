@@ -52,7 +52,7 @@ clientSchema = mongoose.Schema
     ]
 Client = mongoose.model 'Client', clientSchema
 
-# controller
+# controllers
 app.get '/', (req, res) ->
   Client
     .find(
@@ -63,25 +63,38 @@ app.get '/', (req, res) ->
     )
     .sort('name')
     .exec (err, clients) ->
-      render req, res, 
-        title: 'CC Admin'
-        seed:
-          view: 'index'
-          data: 
-            # test RJS.findByProperty on the server-side
-            activeClients: clients.filter (client) -> client.clientType == 'Current Client'
-            leads:         clients.filter (client) -> client.clientType == 'Lead'
+      if err then res.send 500, err
+      else
+        render req, res, 
+          title: 'CC Admin'
+          seed:
+            view: 'index'
+            data: 
+              # test RJS.findByProperty on the server-side
+              activeClients: clients.filter (client) -> client.clientType == 'Current Client'
+              leads:         clients.filter (client) -> client.clientType == 'Lead'
 
 app.get '/client/:name', (req, res) ->
   Client
     .findOne(name: new RegExp('.*' + req.params.name + '.*', 'i'))
     .exec (err, client) ->
-      render req, res, 
-        title: req.params.name
-        seed:
-          view: 'client'
-          data: client
+      if err then res.send 500, err
+      else
+        render req, res, 
+          title: req.params.name
+          seed:
+            view: 'client'
+            data: client
 
+app.post '/client/:name', (req, res) ->
+  Client
+    .update(
+      {name: new RegExp('.*' + req.params.name + '.*', 'i')},
+      req.body
+    )
+    .exec (err, numberAffected, raw) ->
+      if err then res.send 500, err
+      else res.send()
 
 app.get '/:page', (req, res) ->
   render req, res, 

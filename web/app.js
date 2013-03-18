@@ -85,20 +85,24 @@
         }
       ]
     }).sort('name').exec(function(err, clients) {
-      return render(req, res, {
-        title: 'CC Admin',
-        seed: {
-          view: 'index',
-          data: {
-            activeClients: clients.filter(function(client) {
-              return client.clientType === 'Current Client';
-            }),
-            leads: clients.filter(function(client) {
-              return client.clientType === 'Lead';
-            })
+      if (err) {
+        return res.send(500, err);
+      } else {
+        return render(req, res, {
+          title: 'CC Admin',
+          seed: {
+            view: 'index',
+            data: {
+              activeClients: clients.filter(function(client) {
+                return client.clientType === 'Current Client';
+              }),
+              leads: clients.filter(function(client) {
+                return client.clientType === 'Lead';
+              })
+            }
           }
-        }
-      });
+        });
+      }
     });
   });
 
@@ -106,13 +110,29 @@
     return Client.findOne({
       name: new RegExp('.*' + req.params.name + '.*', 'i')
     }).exec(function(err, client) {
-      return render(req, res, {
-        title: req.params.name,
-        seed: {
-          view: 'client',
-          data: client
-        }
-      });
+      if (err) {
+        return res.send(500, err);
+      } else {
+        return render(req, res, {
+          title: req.params.name,
+          seed: {
+            view: 'client',
+            data: client
+          }
+        });
+      }
+    });
+  });
+
+  app.post('/client/:name', function(req, res) {
+    return Client.update({
+      name: new RegExp('.*' + req.params.name + '.*', 'i')
+    }, req.body).exec(function(err, numberAffected, raw) {
+      if (err) {
+        return res.send(500, err);
+      } else {
+        return res.send();
+      }
     });
   });
 

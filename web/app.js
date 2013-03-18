@@ -89,7 +89,7 @@
         return res.send(500, err);
       } else {
         return render(req, res, {
-          title: 'CC Admin',
+          title: 'College Coding Admin',
           seed: {
             view: 'index',
             data: {
@@ -128,6 +128,21 @@
     return Client.update({
       name: new RegExp('.*' + req.params.name + '.*', 'i')
     }, req.body).exec(function(err, numberAffected, raw) {
+      if (err) {
+        return res.send(500, err);
+      } else {
+        return res.send();
+      }
+    });
+  });
+
+  app.post('/client/:name/push/:array', function(req, res) {
+    var name;
+    return name = Client.update({
+      name: new RegExp('.*' + req.params.name + '.*', 'i')
+    }, {
+      $push: rjs.keyValue(req.params.array, req.body)
+    }).exec(function(err, numberAffected, raw) {
       if (err) {
         return res.send(500, err);
       } else {

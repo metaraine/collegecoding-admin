@@ -1,11 +1,59 @@
 client.views.client = Backbone.View.extend(
 
+  events:
+    'click #add-session': 'showAddSession'
+    'click #add-session-form .add': 'addSession'
+    'click #add-session-form .cancel': 'cancelAddSession'
+    'click #add-payment': 'showAddPayment'
+    'click #add-payment-form .add': 'addPayment'
+    'click #add-payment-form .cancel': 'cancelAddPayment'
+
   initialize: () ->
+    that = this
     this.on('render', (el) ->
       $("[contenteditable]", el).on('input', _.debounce(() -> 
-        $.post(location.href, RJS.keyValue($(this).data('name'), $(this).html()))
+        url = '/client/{0}'.supplant([that.model.get('name')])
+        $.post(url, RJS.keyValue($(this).data('name'), $(this).html()))
       , 1000))
     )
+
+  showAddSession: (e) ->
+    e.preventDefault()
+    $('#add-session').hide()
+    $('#add-session-form').fadeIn()
+
+  addSession: (e) ->
+    e.preventDefault()
+    url = '/client/{0}/push/sessions'.supplant([this.model.get('name')])
+    $.post(url, $('#add-session-form').serializeObject(),
+      $('#add-session-form').hide()
+      $('#add-session').fadeIn()
+      location.reload()
+    )
+
+  cancelAddSession: (e) ->
+    e.preventDefault()
+    $('#add-session-form').hide()
+    $('#add-session').fadeIn()
+
+  showAddPayment: (e) ->
+    e.preventDefault()
+    $('#add-payment').hide()
+    $('#add-payment-form').fadeIn()
+
+  addPayment: (e) ->
+    e.preventDefault()
+    url = '/client/{0}/push/payments'.supplant([this.model.get('name')])
+    $.post(url, $('#add-payment-form').serializeObject(),
+      $('#add-payment-form').hide()
+      $('#add-payment').fadeIn()
+      location.reload()
+    )
+
+  cancelAddPayment: (e) ->
+    e.preventDefault()
+    $('#add-payment-form').hide()
+    $('#add-payment').fadeIn()
 
   # Creates a read-only row in the client information table
   buildRow: (label, name) ->
@@ -59,15 +107,27 @@ client.views.client = Backbone.View.extend(
               this.buildBalance()
             ]
 
-            ['h4', 'Past Sessions']
-            ['table.def-list', 
-              this.model.get('sessions').map this.buildSession
-            ]
+            ['h4', 'Sessions']
+            ['table.def-list', this.model.get('sessions').map(this.buildSession)]
+            ['a#add-session', { href: '#' }, 'Add']
+            ['form#add-session-form.form-inline.hide', [
+              ['input.input-mini', { name: 'date', type: 'text', value: moment().format('M/D/YY') }]
+              ['input.input-mini', { name: 'duration', type: 'text', value: 1 }]
+              ['button.add.btn', 'Add']
+              ['button.cancel.btn.btn-link', 'Cancel']
+            ]]
 
             ['h4', 'Payments']
             ['table.def-list', 
               this.model.get('payments').map this.buildPayment
             ]
+            ['a#add-payment', { href: '#' }, 'Add']
+            ['form#add-payment-form.form-inline.hide', [
+              ['input.input-mini', { name: 'date', type: 'text', value: moment().format('M/D/YY') }]
+              ['input.input-mini', { name: 'amount', type: 'text', value: 1 }]
+              ['button.add.btn', 'Add']
+              ['button.cancel.btn.btn-link', 'Cancel']
+            ]]
           ]]
         ]]
 

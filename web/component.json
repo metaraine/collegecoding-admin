@@ -9,6 +9,7 @@
     "creatable": "https://raw.github.com/RaineOrShine/creatable/master/deploy/creatable.2.0.js",
     "creatable-backbone": "https://raw.github.com/RaineOrShine/creatable/master/deploy/creatable.backbone.1.1.js",
     "moment": "~2.0.0",
-    "jquery.hotkeys": "https://github.com/jeresig/jquery.hotkeys.git#~0.1.0"
+    "jquery.hotkeys": "https://github.com/jeresig/jquery.hotkeys.git#~0.1.0",
+    "serializeObject": "https://github.com/victorarias/serializeObject.git#~1.0.0"
   }
 }

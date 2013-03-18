@@ -3,7 +3,6 @@ client.partials.footer = Backbone.View.extend(
     ['fragment', [
       ['hr']
       ['footer', [
-        ['p', { html: true }, '&copy; Project Name']
       ]]
 
       ['#client-search.modal.hide.fade', { role: 'dialog'}, [

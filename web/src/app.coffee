@@ -66,7 +66,7 @@ app.get '/', (req, res) ->
       if err then res.send 500, err
       else
         render req, res, 
-          title: 'CC Admin'
+          title: 'College Coding Admin'
           seed:
             view: 'index'
             data: 
@@ -91,6 +91,19 @@ app.post '/client/:name', (req, res) ->
     .update(
       {name: new RegExp('.*' + req.params.name + '.*', 'i')},
       req.body
+    )
+    .exec (err, numberAffected, raw) ->
+      if err then res.send 500, err
+      else res.send()
+
+# generic client push endpoint
+app.post '/client/:name/push/:array', (req, res) ->
+  name = 
+  Client
+    .update(
+      {name: new RegExp('.*' + req.params.name + '.*', 'i')},
+      $push:
+        rjs.keyValue(req.params.array, req.body)
     )
     .exec (err, numberAffected, raw) ->
       if err then res.send 500, err

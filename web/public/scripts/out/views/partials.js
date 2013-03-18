@@ -5,15 +5,7 @@
     build: function() {
       return [
         'fragment', [
-          ['hr'], [
-            'footer', [
-              [
-                'p', {
-                  html: true
-                }, '&copy; Project Name'
-              ]
-            ]
-          ], [
+          ['hr'], ['footer', []], [
             '#client-search.modal.hide.fade', {
               role: 'dialog'
             }, [

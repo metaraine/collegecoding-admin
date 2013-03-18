@@ -18,7 +18,7 @@ client.viewCreator = (View) ->
 $ ->
   
   # make sure the bootstrapped view matches a client-side Backbone View defined in client.views
-  if not client.view of client.views
+  if not (client.view of client.views)
     console.error "Invalid view: '{0}'. This value must exactly match the name of a view function stored on client.views.".supplant([client.view])
   
   # instantiate the appropriate view, passing the bootstrapped data as the model

@@ -1,0 +1,655 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"google_con",
+				"google_conversion_id"
+			],
+			[
+				"googl",
+				"google_conversion_value"
+			],
+			[
+				"google",
+				"google_conversion_label"
+			],
+			[
+				"calOpt",
+				"calOptionsStr"
+			],
+			[
+				"mark",
+				"markerLayer"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "web/README.md",
+			"settings":
+			{
+				"buffer_size": 837,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "minitasks.md",
+			"settings":
+			{
+				"buffer_size": 282,
+				"line_ending": "Unix",
+				"name": "3/11"
+			}
+		},
+		{
+			"file": "web/src/app.coffee",
+			"settings":
+			{
+				"buffer_size": 2410,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "web/app.js",
+			"settings":
+			{
+				"buffer_size": 2854,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "web/public/scripts/src/views/index.coffee",
+			"settings":
+			{
+				"buffer_size": 1011,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "web/public/scripts/src/views/client.coffee",
+			"settings":
+			{
+				"buffer_size": 2315,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "web/public/style/main.styl",
+			"settings":
+			{
+				"buffer_size": 1305,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "web/views/layout.jade",
+			"settings":
+			{
+				"buffer_size": 1332,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/out/views/partials.js",
+		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/src/views/partials.coffee",
+		"/Users/raine/Projects/collegecoding-admin/web/component.json",
+		"/Users/raine/Projects/collegecoding-admin/Client Relationship Manager - Sheet1.csv",
+		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/src/main.coffee",
+		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/out/main.js",
+		"/Users/raine/Projects/collegecoding-admin/sessions & payments.json",
+		"/Users/raine/Projects/collegecoding-admin/web/src/controller-helper.coffee",
+		"/Users/raine/Projects/collegecoding-admin/web/views/layout.jade",
+		"/Users/raine/Downloads/Client Relationship Manager - Sheet1.csv",
+		"/Users/raine/Projects/collegecoding-admin/README.md",
+		"/Users/raine/Projects/collegecoding-admin/web/package.json",
+		"/Users/raine/Projects/collegecoding-admin/web/.env",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/out/index.js",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/README.md",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/views/metrics.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/views/content-template.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/views/group-classes/intro-to-web-development.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/cancel.html",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/index.html",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/index.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/src/calendar.coffee",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/views/calendar.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/views/index.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/calendar.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/views/footer.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/template.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/group-classes/intro-to-web-development.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/src/main.coffee",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/src/clientMarkerData.coffee",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/out/client-marker-data.js",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/style/main.styl",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/views/template.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/client-marker-data.js",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/info.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/craigslist.html",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/java-programming-tutor.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/thankyou.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/java-programming-tutor.html",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/cancel.php",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/out/main.js",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/lib/jquery.toc.raine.js",
+		"/Users/raine/Google Drive/Web & Programming/Projects/jquery.toc/lib/toc.js",
+		"/Users/raine/.gitconfig",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/main.js",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/main.coffee",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/normalize.css",
+		"/Users/raine/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/style.css",
+		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/exclude.html",
+		"/Users/raine/Google Drive/Web & Programming/Python/pacman/layouts/bigMaze.lay",
+		"/Users/raine/Google Drive/Teaching/Tutoring/Game Programming with C#/FirstGame/FirstGame/Program.cs",
+		"/Users/raine/Google Drive/Web & Programming/Projects/codingforacause/index.html",
+		"/Users/raine/Google Drive/Web & Programming/Scripts/twitter unsubscribe from email notifications.js",
+		"/Users/raine/Google Drive/Web & Programming/Projects/clarityofheart/www-original/index.html",
+		"/Users/raine/Google Drive/Web & Programming/Projects/clarityofheart/www/scripts/app.coffee.js",
+		"/Users/raine/Projects/workshop-start-to-finish/index.html",
+		"/Users/raine/Projects/workshop-start-to-finish/style.css",
+		"/Users/raine/Dropbox/Programming/Projects/rjs/deploy/rjs.2.7.js",
+		"/Users/raine/Projects/realhabits/web/index.html",
+		"/Users/raine/Dropbox/Britt-Annie/Products/Inventory.txt",
+		"/Users/raine/Dropbox/Web & Programming/Scripts/duolingo-location-search.js",
+		"/Users/raine/Google Drive/Teaching/Technology/Greenfoot, Alice, and other Research Notes.md",
+		"/Users/raine/Projects/accountabilitypal/web/css/style.css",
+		"/Users/raine/Projects/accountabilitypal/web/js/app.js",
+		"/Users/raine/Projects/code-and-see/web/js/app.js",
+		"/Users/raine/Projects/code-and-see/web/index.html",
+		"/Users/raine/Projects/code-and-see/web/css/style.css",
+		"/Users/raine/Projects/code-and-see/web/js/rjs.2.6-proto.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"leads",
+			"sort",
+			"googlead",
+			"map",
+			".format",
+			"java",
+			"itemprop",
+			"map",
+			"view ava",
+			"calendar1",
+			"sprites",
+			"sprite",
+			"header",
+			"sprite",
+			"personalized",
+			"sign up",
+			"phrase",
+			"sign up",
+			"sign upenen",
+			"sign up",
+			"personalized",
+			"address",
+			"shy",
+			"face",
+			"via",
+			"whiteboard",
+			"img",
+			"toc-image",
+			"png",
+			"img",
+			"png",
+			".png",
+			"showcalendars",
+			"createToc",
+			"cs",
+			"margin-bottom",
+			"address-footer",
+			"group class",
+			"header",
+			"logo",
+			"address",
+			"gray",
+			"gray90",
+			"gray",
+			"midgray",
+			"nearblack",
+			"darkgray",
+			"darkergray",
+			"lightestgray",
+			"nearblack",
+			".button",
+			"center",
+			"line-height",
+			"linkblue",
+			"map",
+			"footer",
+			"boulder",
+			"\\.png",
+			"\\.jp",
+			"\\.jpg",
+			"\\.png",
+			".jpg",
+			".png",
+			"gnue",
+			"boulder",
+			"#home",
+			"java",
+			"javaenn",
+			"sign up",
+			"\nsign up",
+			"sign up",
+			"jon",
+			".svg",
+			"book.png",
+			"svg",
+			"paypal-f",
+			"paypal-forme",
+			"paypal-form",
+			".button",
+			"img",
+			"paypal",
+			"toc-image",
+			"toc-",
+			"toc-image",
+			"ul",
+			".svg",
+			"headerText",
+			"section",
+			"anchor",
+			"anchorname",
+			"contact",
+			"(\\s)0px",
+			"0px",
+			": ",
+			"contact\"",
+			"sign up",
+			"has t",
+			"chica",
+			"bould",
+			"boulder",
+			"\\t(\\w\\w)\\t",
+			"(\\w\\w)'",
+			"t(\\w\\w)'",
+			", (\\w\\w)\\t'",
+			"^(\\w*) \\S*",
+			"#[A-f]",
+			"#\\d",
+			"darkgray",
+			"#\\d",
+			"#",
+			"color",
+			"coloren",
+			"color",
+			": ",
+			"20v",
+			"30",
+			"=\"\"",
+			"sign up",
+			"border=",
+			"img",
+			"java programming",
+			"learning pr",
+			"mailto:",
+			"’",
+			"mailto",
+			"prices",
+			"today",
+			"0.jpg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			".png",
+			"\\10",
+			"0",
+			" 0",
+			" ",
+			", \\1\\t",
+			", \\1'",
+			", \\1\\t'",
+			" \\1",
+			" ",
+			"0.jpeg",
+			"-400.jpg",
+			"line"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "web/README.md",
+					"settings":
+					{
+						"buffer_size": 837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								837,
+								837
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 115.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "minitasks.md",
+					"settings":
+					{
+						"buffer_size": 282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"auto_name": "3/11",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "web/src/app.coffee",
+					"settings":
+					{
+						"buffer_size": 2410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1730,
+								1730
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/Syntaxes/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 655.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "web/app.js",
+					"settings":
+					{
+						"buffer_size": 2854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1592,
+								1592
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1045.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "web/public/scripts/src/views/index.coffee",
+					"settings":
+					{
+						"buffer_size": 1011,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/Syntaxes/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "web/public/scripts/src/views/client.coffee",
+					"settings":
+					{
+						"buffer_size": 2315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2191,
+								2191
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/Syntaxes/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 535.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "web/public/style/main.styl",
+					"settings":
+					{
+						"buffer_size": 1305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1299,
+								1299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/editors/Stylus.tmbundle/Syntaxes/Stylus.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 625.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "web/views/layout.jade",
+					"settings":
+					{
+						"buffer_size": 1332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1146,
+								1146
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				".styl",
+				"web/public/style/main.styl"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true
+}

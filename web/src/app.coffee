@@ -24,36 +24,64 @@ db.once 'open', () ->
 # model
 clientSchema = mongoose.Schema
     #"_id": new ObjectID("513e3b3091b3b925b386821d"),
-    "Name": String
-    "Type": String
-    "First Contact": Date
-    "Last Contact": Date
-    "Balance": Number
-    "Auto Action": String
-    "Platform": String
-    "TZone": String
-    "Source": String
-    "City": String
-    "State": String
-    "Phone": String
-    "School": String
-    "Program": String
-    "Class": String
-    "Notes": String
+    name: String
+    clientType: String
+    firstContact: Date
+    lastContact: Date
+    balance: Number
+    autoAction: String
+    platform: String
+    timezone: String
+    referrer: String
+    city: String
+    state: String
+    phone: String
+    school: String
+    schoolProgram: String
+    schoolClass: String
+    notes: String
+    notes2: String
+    rate: String
+    sessions: [
+      date: Date
+      duration: Number
+    ],
+    payments: [
+      date: Date
+      amount: Number
+    ]
 Client = mongoose.model 'Client', clientSchema
 
 # controller
 app.get '/', (req, res) ->
   Client
-    .find(Type: "Current Client")
-    .sort('Name')
+    .find(
+      $or: [
+        {clientType: "Current Client"},
+        {clientType: "Lead"}
+      ]
+    )
+    .sort('name')
     .exec (err, clients) ->
       render req, res, 
         title: 'CC Admin'
         seed:
           view: 'index'
-          data:
-            clients: clients
+          data: 
+            # test RJS.findByProperty on the server-side
+            activeClients: clients.filter (client) -> client.clientType == 'Current Client'
+            leads:         clients.filter (client) -> client.clientType == 'Lead'
+
+app.get '/client/:name', (req, res) ->
+  Client
+    .findOne(name: new RegExp('.*' + req.params.name + '.*', 'i'))
+    .exec (err, client) ->
+      render req, res, 
+        title: req.params.name
+        seed:
+          view: 'client'
+          data: client
+
 
 app.get '/:page', (req, res) ->
   render req, res, 

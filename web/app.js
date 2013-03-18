@@ -41,37 +41,76 @@
   });
 
   clientSchema = mongoose.Schema({
-    "Name": String,
-    "Type": String,
-    "First Contact": Date,
-    "Last Contact": Date,
-    "Balance": Number,
-    "Auto Action": String,
-    "Platform": String,
-    "TZone": String,
-    "Source": String,
-    "City": String,
-    "State": String,
-    "Phone": String,
-    "School": String,
-    "Program": String,
-    "Class": String,
-    "Notes": String
+    name: String,
+    clientType: String,
+    firstContact: Date,
+    lastContact: Date,
+    balance: Number,
+    autoAction: String,
+    platform: String,
+    timezone: String,
+    referrer: String,
+    city: String,
+    state: String,
+    phone: String,
+    school: String,
+    schoolProgram: String,
+    schoolClass: String,
+    notes: String,
+    notes2: String,
+    rate: String,
+    sessions: [
+      {
+        date: Date,
+        duration: Number
+      }
+    ],
+    payments: [
+      {
+        date: Date,
+        amount: Number
+      }
+    ]
   });
 
   Client = mongoose.model('Client', clientSchema);
 
   app.get('/', function(req, res) {
     return Client.find({
-      Type: "Current Client"
-    }).sort('Name').exec(function(err, clients) {
+      $or: [
+        {
+          clientType: "Current Client"
+        }, {
+          clientType: "Lead"
+        }
+      ]
+    }).sort('name').exec(function(err, clients) {
       return render(req, res, {
         title: 'CC Admin',
         seed: {
           view: 'index',
           data: {
-            clients: clients
+            activeClients: clients.filter(function(client) {
+              return client.clientType === 'Current Client';
+            }),
+            leads: clients.filter(function(client) {
+              return client.clientType === 'Lead';
+            })
           }
+        }
+      });
+    });
+  });
+
+  app.get('/client/:name', function(req, res) {
+    return Client.findOne({
+      name: new RegExp('.*' + req.params.name + '.*', 'i')
+    }).exec(function(err, client) {
+      return render(req, res, {
+        title: req.params.name,
+        seed: {
+          view: 'client',
+          data: client
         }
       });
     });

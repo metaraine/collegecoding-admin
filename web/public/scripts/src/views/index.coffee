@@ -3,28 +3,39 @@ client.views.index = Backbone.View.extend(
     ['#page-index', [
       ['.container-narrow', [
         ['.masthead', [
-          ['h3 a.muted', {href: '/'}, 'Project Name']
-        ]]
-        ['hr']
-        ['.jumbotron', [
-          ['h1', 'This project is going to be so awesome!']
-          ['p.lead', 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.']
+          ['h3 a.muted', {href: '/'}, 'College Coding']
         ]]
         ['hr']
         ['.row-fluid.marketing', [
-          ['.span6', [
-            ['h4', 'Clients']
-            ['ul', this.model.get('clients').map (client) ->
-              ['li', client.Name]
+
+          ['.span4 aside#active-clients.client-list', [
+            ['h4', 'Active Clients']
+            ['ul', this.model.get('activeClients').map (client) ->
+              ['li a', { href: '/client/' + client.name }, client.name]
             ]
           ]]
-          ['.span6', [
+
+          ['.span8', [
+            'Health Indicator Charts'
           ]]
         ]]
-        ['hr']
-        ['.footer', [
-          ['p', { html: true }, '&copy; Project Name']
+
+        ['.row-fluid.marketing', [
+
+          ['.span4 aside#leads.client-list', [
+            ['h4', 'Leads']
+            ['ul', this.model.get('leads').map (client) ->
+              ['li a', { href: '/client/' + client.name }, client.name]
+            ]
+          ]]
+
+          ['.span8', [
+            'Health Indicator Charts'
+          ]]
+
         ]]
+
+        new client.partials.footer()
       ]]
     ]]
   )

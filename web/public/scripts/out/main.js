@@ -28,7 +28,7 @@
 
   $(function() {
     var view;
-    if (!client.view in client.views) {
+    if (!(client.view in client.views)) {
       console.error("Invalid view: '{0}'. This value must exactly match the name of a view function stored on client.views.".supplant([client.view]));
     }
     view = new client.views[client.view]({

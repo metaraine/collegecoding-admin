@@ -2,9 +2,6 @@
  * Color Definitions
  ******************************/
 /******************************
- * Fonts
- ******************************/
-/******************************
  * Functions
  ******************************/
 /******************************
@@ -68,4 +65,16 @@ a.muted {
 }
 .marketing p + h4 {
   margin-top: 28px;
+}
+.client-list {
+  float: left;
+  text-align: right;
+}
+.client-list ul {
+  list-style-type: none;
+}
+.def-list td:first-child {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 15px;
 }

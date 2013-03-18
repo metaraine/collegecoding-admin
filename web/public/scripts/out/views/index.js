@@ -12,30 +12,42 @@
                   [
                     'h3 a.muted', {
                       href: '/'
-                    }, 'Project Name'
+                    }, 'College Coding'
                   ]
                 ]
-              ], ['hr'], ['.jumbotron', [['h1', 'This project is going to be so awesome!'], ['p.lead', 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.']]], ['hr'], [
+              ], ['hr'], [
                 '.row-fluid.marketing', [
                   [
-                    '.span6', [
-                      ['h4', 'Clients'], [
-                        'ul', this.model.get('clients').map(function(client) {
-                          return ['li', client.Name];
+                    '.span4 aside#active-clients.client-list', [
+                      ['h4', 'Active Clients'], [
+                        'ul', this.model.get('activeClients').map(function(client) {
+                          return [
+                            'li a', {
+                              href: '/client/' + client.name
+                            }, client.name
+                          ];
                         })
                       ]
                     ]
-                  ], ['.span6', []]
+                  ], ['.span8', ['Health Indicator Charts']]
                 ]
-              ], ['hr'], [
-                '.footer', [
+              ], [
+                '.row-fluid.marketing', [
                   [
-                    'p', {
-                      html: true
-                    }, '&copy; Project Name'
-                  ]
+                    '.span4 aside#leads.client-list', [
+                      ['h4', 'Leads'], [
+                        'ul', this.model.get('leads').map(function(client) {
+                          return [
+                            'li a', {
+                              href: '/client/' + client.name
+                            }, client.name
+                          ];
+                        })
+                      ]
+                    ]
+                  ], ['.span8', ['Health Indicator Charts']]
                 ]
-              ]
+              ], new client.partials.footer()
             ]
           ]
         ]

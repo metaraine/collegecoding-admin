@@ -1,0 +1,10 @@
+    "sessions": [
+        { "date": new Date("2/25/2013"), "duration": 1 },
+        { "date": new Date("2/25/2013"), "duration": 1 },
+        { "date": new Date("2/25/2013"), "duration": 2 },
+        { "date": new Date("2/25/2013"), "duration": 2 }
+    ],
+    "payments": [
+        { "date": new Date("2/25/2013"), "amount": 1 },
+        { "date": new Date("3/9/2013"), "amount": 2 }
+    ]

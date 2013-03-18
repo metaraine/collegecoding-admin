@@ -47,6 +47,7 @@ stylus public/style/ -w &
 coffee -o ./ -cw src/ &
 coffee -o public/scripts/out/ -cw public/scripts/src/ &
 mongod &
+smog &
 
 # start app
 foreman start

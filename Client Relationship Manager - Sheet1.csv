@@ -1,0 +1,86 @@
+name,notes,firstContact,clientType,lastContact,balance,autoAction,platform,timezone,referrer,city,state,phone,school,schoolProgram,schoolClass,notes2
+Torin,,12/1/2011,Past Client,2/28/2013,,,,,MyBoulderTutor,Boulder,CO,,,,,
+Seth Taddiken,,7/27/2012,Past Client,2/28/2013,1,,,,MyBoulderTutor,Boulder,CO,,,,,
+Anna Pearson,,2/21/2012,Past Client,3/22/2012,1,,,,MyBoulderTutor,Boulder,CO,,CU,,,
+Caitlin Hickey,,8/6/2012,Past Client,8/12/2012,,,,,MyBoulderTutor,Boulder,CO,,CU,,,
+Adrienne,,8/30/2012,Past Client,10/20/2012,,,,,MyBoulderTutor,Boulder,CO,,CU,,,
+Josh Forman,,10/15/2012,Past Client,2/28/2013,0,,,,In Person,Boulder,CO,,,,,Heading to Thailand till Nov 15
+Angel Garcia Jr,,10/16/2012,Past Client,11/10/2012,0,,,,MyBoulderTutor,Boulder,CO,,,,,
+Ephraim M,,10/21/2012,Lead,10/21/2012,,,,,?,,,,,,,"Contacted through Skype. Front-End Developer with ""solid working knowledge of html and css"" and interest in ""media handling capabilities of html5."""
+Paula Brunkhorst,,10/21/2012,Past Client,2/28/2013,0,,Java,1,Google,Mitchell,NE,,Colorado Technical University,Bachelor's Information Technology,Advanced Java,"last-minute request for Java help: Swing, sockets"
+Hal Steinkopf,,10/21/2012,Past Client,10/23/2012,0,,Java,,"Google search ""Java Tutoring""",Midwest,,,Walden University,Graduate Certificate - Information Systems,ISYS6030 Principle of Programming,
+Julie Davis,,10/22/2012,Declined,10/28/2012,,,MARIE,,,,,,,,,"boolean logic, logic gates, MARIE"
+Svitlana Shmargunova,,10/23/2012,Past Client,12/8/2012,0,Call!,C,0,,Santa Monica,CA,,,,,
+Nick Vitullo,,10/23/2012,Past Client,12/10/2012,0,Call!,,,Google,Philadelphia,PA,,Drexel University,Masters Program,"INFO532 - Basics to HTML, Javascript, and Software Programming",
+Fong Vang,,10/24/2012,Past Client,2/28/2013,0,,,,MyBoulderTutor,,,,,,,
+Sebastian Zaba,,10/25/2012,Past Client,11/2/2012,0,,Java,2,Google,Chicago,IL,,DePaul,Masters Program,SE450,
+Daniel Shulkin,,10/25/2012,Past Client,11/26/2012,0,,Python,,,New York,NY,,NYU,,,
+Simon Zhu,,10/27/2012,Past Client,2/28/2013,0,,Java,,,,MD,,,,,Interview Prep
+Steven Flannery,,10/27/2012,Past Client,11/10/2012,0,Call!,Javascript,2,Austin Craigslist,Austin,TX,,,,,
+Austin Brown,,10/26/2012,Past Client,2/28/2013,0.5,,Java,0,Google,Santa Cruz,CA,,UC Santa Cruz,Technology Information Management,Data Structures & Algorithms,
+Nathan Mallipeddi,,10/30/2012,Past Client,2/28/2013,0,,Java,0,,Cupertino,CA,,,9th grade,Computer Programming - Java,Father: Murali
+Maria M,,10/30/2012,Declined,10/30/2012,,,Bash Shell,,,,,,,,,
+Erslan,,11/1/2012,Uninterested,11/1/2012,,,,,,,,,,,,Too expensive
+Mike Arroz,,11/1/2012,Declined,11/1/2012,,,Ruby,,Craigslist,,,,,,,
+Cristina Lopez Barrios,,11/1/2012,Lead,11/12/2012,,,Python,,SF Craigslist,,,,,,,
+Khalid Abudawood,,11/3/2012,Lead,11/12/2012,,,C++,,MyBoulderTutor,,,,CU,,,
+Mohammed,,11/5/2012,Lead,12/2/2012,,,C++,,MyBoulderTutor,,,,CU,,,
+Amanda Lopez,,11/6/2012,Lead,11/12/2012,,,,,,,,,,,,
+Philip Arpin,,11/7/2012,Lead,11/12/2012,,,Java,,,,,,,,,
+Jon Young,,11/8/2012,Past Client,2/28/2013,4,,Web,0,LA Craigslist,Los Angeles,CA,,,,,
+Kabin Maharjan,,11/9/2012,Lead,2/28/2013,,,Javascript,,,,,,,,,
+Kevin Mhrjn,,11/10/2012,Lead,11/10/2012,,,Javascript MVC,,,,,,,,,
+Unknown,,11/10/2012,Declined,11/10/2012,,,Springsource,,,,,,,,,
+Jean Seme,,11/12/2012,Declined,11/13/2012,,,"Arduino, C++",,,,,,,,,
+Yasir Safdar,,11/13/2012,Past Client,11/15/2012,1.5,,"Java, WindowsBuilder",2,Google,Chicago,IL,,University of Chicago,Professional Program in Computer Science (2yr),Java,
+Ken,,11/14/2012,Declined,11/14/2012,,,,,,,,,,,,Outsourcing
+Cameron Crook,,11/15/2012,Past Client,2/28/2013,0,,Java,PST,Google,Redlands,CA,,Solar Quest Learning Center (Course through CTY),High School,Advanced Java Programming Course,Mom: Jackie
+Raashid Siddique,,11/16/2012,Lead,2/28/2013,,,Web,0,LA Craigslist,Los Angeles,CA,,,,,Company will pay $200/month for professional development
+Jack B,,11/16/2012,Lead,11/16/2012,,,C++,,,,,,,,,Emergency rate
+Bill Snuth,,11/16/2012,Declined,11/16/2012,,,Python,,,,,,,,,Outsourcing
+Sergio,,11/16/2012,Declined,11/18/2012,,,"Neural Nets, Advanced C++",,LA Craigslist,,,,,,,
+Thao Nguyen,,11/16/2012,Lead,11/18/2012,,,,0,Seattle Craigslist,Seattle,WA,,,,,
+Sophia Lui,,11/17/2012,Past Client,2/28/2013,0,,C++ Heaps,EST,Google,,IN,,Purdue,4yr Math,Data Structures & Algorithms,
+Ruobi Liu,,11/17/2012,Lead,11/18/2012,,,Android OpenGL ES,,,,,,,,,
+Shayne Fedorka,,11/18/2012,Past Client,12/25/2012,0,,Java (Networking),3,Google,Buffalo,NY,,University at Buffalo,Computer Engineering,CSC489: Computer Networking,
+Khoa Bui,,11/20/2012,Declined,11/21/2012,,,OpenGL (Phong Shading & Textures),,Craigslist,,,,,,,
+Nada Almadani,,11/21/2012,Lead,2/28/2013,,,"Python, C++",,,,,,,,,
+Chris Huh,,11/24/2012,Past Client,2/28/2013,5.5,,GnuE,3,,Amherst,MA,,Amherst,,,Mom: Jihee
+Lisa Orr,,11/24/2012,Lead,2/28/2013,,,Java,,,,,,,,,
+Jeremy Breit,,11/25/2012,Lead,2/28/2013,,,,,,,,,,,,
+Matt Sinclair,,11/25/2012,Declined,12/7/2012,0,,C#,2,,San Antonio,TX,,,,,
+Christina Burden,,11/27/2012,Lead,2/28/2013,,,Video Game (Java?),,,,,,,,,
+Omar Jabbour,,12/4/2012,Lead,12/4/2012,,,Java,,,,,,,,,
+Pooja Singh,,12/5/2012,Lead,2/28/2013,,,Java,,,,,,,,,Was overbooked and couldn't do sessions during finals season. Will contact again in the New Year.
+Ben Brooke,,1/9/2013,Lead,1/9/2013,,,"PHP, MySQL",,,,,,,,,720-288-2353
+Natalie Jorion,,1/28/2013,Past Client,2/5/2013,0,,C,2,,Chicago,IL,,University of Illinois Chicago,Learning Sciences,Discrete Data Structures and Algorithms (C),
+Abdulrahman Alturki,,1/31/2013,Lead,2/28/2013,,,Java,,,,,,,,,
+Jeremy Conley,,2/2/2013,Lead,2/2/2013,,,,,,,,,,,,(423) 355-3116
+Allan Lin,,2/3/2013,Declined,2/3/2013,,,C,0,,Los Angeles,CA,,UCLA,CS 111 Operating System,,
+Cyrus Sobhani,,2/4/2013,Lead,2/28/2013,,,,,,,,,,,,"Attended coding camp at Stanford and loved it. Contacted by father, Rob."
+George,,2/10/2013,Lead,2/11/2013,,,"iOS, C#.NET GameDev",,,,,,,,,
+Haston Haxel,notes,11/2/2012,Current Client,3/5/2013,18.5,,Python,0,,Tucson,AZ,,Arizona State University,Applied Computer Science (4 yr),Object Oriented Software Development 1,
+Kristina Garfinkel,,11/1/2012,Current Client,2/24/2013,0,,"Python, Javascript",0,,San Francisco,CA,,,,,
+Eddie Zahrebelski,,11/14/2012,Current Client,2/24/2013,4.5,,Java,3,Google,New York,NY,,Colombia,Financial Engineering,,Mom: Julie
+Mike Mioduski,,12/31/2013,Current Client,,2,,Web,,,Boulder,CO,,,,,Contact for individual sessions once settled
+Judy Dunn,,11/9/2012,Lead,3/8/2013,,,AP Computer Science,PST,,,,,,,,
+Tiki Owens,,1/28/2013,Current Client,,0,,Java,3,,Newark,NJ,,New Jersey Institute of Technology,4yr,Advanced Programming (Java II),
+Lyn Booth,,2/11/2013,Current Client,2/11/2013,5,,Javascript,3,,Palm Harbor,FL,,University of South Florida,Instructional Design,Javascript,
+Daniel Lee,,2/4/2013,Current Client,,0,,Python (freshman programmer),3,,Blacksburg,VA,,Virginia Tech,,,(703) 286-9116
+Rando Muzashvili,,2/12/2013,Current Client,,0,,Java (language barrier),EST,,South Amboy,NJ,,Brookdale,2yr Computer Programming,Java,
+Trevor Woods,,2/13/2013,Lead,2/14/2013,,,C++,EST,,,GA,,,,,
+Jo Anne Ciminello,,2/14/2013,Current Client,,0,,"Java (getters, setters)",EST,,Jamestown,NY,,Jamestown Community College,Certification,Intro to Java,
+,,,,,,,,,,,,,,,,
+Todd,,2/6/2012,Current Client,,,,,,MyBoulderTutor,Boulder,CO,,,,,
+Jamie,,2/18/2013,Declined,2/19/2013,,,C++,,,,Minnesota,(612) 998-4948,,,,Asked to provide solutions over email
+Mr. Wota,,2/18/2013,Not Interested,2/19/2013,,,,,,,VA,703-338-0573,,,,Not looking for online
+Raghu,,2/18/2013,Lead,2/19/2013,,,"Python, Android Testing",,,San Diego,CA,858-603-4341,,,,
+Arvind Chava,,2/2/2013,Current Client,,,,"Java (PriorityQueue, Huffman)",EST,,Alexandria,VA,,Thomas Jefferson High School,AP Computer Science,,(804) 915-7626
+Richelle Speights,,2/7/2013,Current Client,,,,C++,,,Monrovia,Liberia,,,,,
+Samantha M. Iannucci,,2/28/2013,Current Client,,,,Picturing Programs w/Racket,EST,,Purchase,NY,,Manhattanville College,,Animation & Games,
+Jamie Shiller,,3/1/2013,Current Client,,,,DocuSign REST API,PST,,,,,,,,
+Dahn Kim,,3/1/2013,Current Client,,,,"C++ (Recursion, Pointers)",PST,,Riverside,CA,,University of Califormia Rivrside,4yr Computer Engineering,CS12 Intro to CS,
+Laura Mattson,,3/3/2013,Current Client,,,,Java (IO),EST,,Plymouth,MA,,University of Illinois Springfield,Masters,Computer Programming Principles II (Java),Headfirst Java
+Paul Matte,,3/4/2013,Declined,,,,C#,,,,,,,,,
+Manal,,3/4/2013,Lead,,,,Racket (Recursive Decent Parser),EST?,,,,,,,,
+Chris Vansco,,3/6/2013,Declined,3/6/2013,,,C++ (Reverse Kinematics),EST,,,,,,,,

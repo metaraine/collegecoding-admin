@@ -24,12 +24,13 @@ client.views.client = Backbone.View.extend
 
   addSession: (e) ->
     e.preventDefault()
-    url = '/client/{0}/session'.supplant([this.model.get('name')])
-    $.post(url, $('#add-session-form').serializeObject(),
+    client = RJS.merge
+      name: this.model.get 'name'
+      $('#add-session-form').serializeObject()
+    $.post '/db/sessions', client, ()->
       $('#add-session-form').hide()
       $('#add-session').fadeIn()
       location.reload()
-    )
 
   cancelAddSession: (e) ->
     e.preventDefault()
@@ -43,12 +44,13 @@ client.views.client = Backbone.View.extend
 
   addPayment: (e) ->
     e.preventDefault()
-    url = '/client/{0}/payment'.supplant([this.model.get('name')])
-    $.post(url, $('#add-payment-form').serializeObject(),
+    client = RJS.merge
+      name: this.model.get 'name'
+      $('#add-payment-form').serializeObject()
+    $.post '/db/payments', client, ()->
       $('#add-payment-form').hide()
       $('#add-payment').fadeIn()
       location.reload()
-    )
 
   cancelAddPayment: (e) ->
     e.preventDefault()

@@ -2,6 +2,7 @@
 express =     require('express')
 mongoose =    require('mongoose')
 rjs =         require('rjs').installPrototypes()
+async =       require('async')
 config =      require('./config').config
 render =      require('./controller-helper.js').render
 
@@ -23,7 +24,7 @@ db.once 'open', () ->
 
 # model
 model = 
-  client: mongoose.model 'Client', mongoose.Schema
+  clients: mongoose.model 'Client', mongoose.Schema
     _id: mongoose.Schema.ObjectId,
     name: String
     clientType: String
@@ -57,7 +58,7 @@ model =
       notes: String
     ]
 
-  session: mongoose.model 'Session', mongoose.Schema
+  sessions: mongoose.model 'Session', mongoose.Schema
     _id: mongoose.Schema.ObjectId,
     duration: Number
     name: String
@@ -65,7 +66,7 @@ model =
     date: Date
     notes: String
 
-  payment: mongoose.model 'Payment', mongoose.Schema
+  payments: mongoose.model 'Payment', mongoose.Schema
     _id: mongoose.Schema.ObjectId,
     amount: Number
     name: String
@@ -75,42 +76,41 @@ model =
 
 # controllers
 app.get '/', (req, res) ->
-  model.client
-    .find(
-      $or: [
-        {clientType: "Current Client"},
-        {clientType: "Lead"}
-      ]
-    )
-    .sort('name')
-    .exec (err, clients) ->
-      model.session
+  async.parallel {
+    clients: (callback)->
+      model.clients
+        .find($or: [{clientType: "Current Client"}, {clientType: "Lead"}])
+        .sort('name')
+        .exec callback
+    sessions: (callback)->
+      model.sessions
         .find(date: { $gte: new Date(Date.now() - 3 * 30 * 24 * 60 * 60 * 1000) })
         .sort('date')
-        .exec (err, sessions) ->
+        .exec callback
+  }, (err, results)->
 
-          # get sessions per day time series
-          dateValueSeries = rjs.orderedGroup(sessions, 'date').map((dateGroup)->
-            date: new Date(dateGroup.key).getTime()
-            value: dateGroup.items.length
-          )
-          dates = dateValueSeries.pluck('date')
-          values = dateValueSeries.pluck('value')
+    # get sessions per day time series
+    dateValueSeries = rjs.orderedGroup(results.sessions, 'date').map((dateGroup)->
+      date: new Date(dateGroup.key).getTime()
+      value: dateGroup.items.length
+    )
+    dates = dateValueSeries.pluck('date')
+    values = dateValueSeries.pluck('value')
 
-          render req, res, 
-            title: 'College Coding Admin'
-            seed:
-              view: 'index'
-              data: 
-                # test RJS.findByProperty on the server-side
-                activeClients: clients.filter (client) -> client.clientType == 'Current Client'
-                leads:         clients.filter (client) -> client.clientType == 'Lead'
-                sessionsPerDay:
-                  x: dates
-                  y: values
+    render req, res, 
+      title: 'College Coding Admin'
+      seed:
+        view: 'index'
+        data: 
+          # test RJS.findByProperty on the server-side
+          activeClients: results.clients.filter (client) -> client.clientType is 'Current Client'
+          leads:         results.clients.filter (client) -> client.clientType is 'Lead'
+          sessionsPerDay:
+            x: dates
+            y: values
 
 app.get '/client/:name', (req, res) ->
-  model.client.findOne(name: new RegExp('.*' + req.params.name + '.*', 'i')).exec (err, client) ->
+  model.clients.findOne(name: new RegExp('.*' + req.params.name + '.*', 'i')).exec (err, client)->
     if not client
       render req, res, 
         title: 'New Client: ' + req.params.name
@@ -119,18 +119,22 @@ app.get '/client/:name', (req, res) ->
           data: 
             name: req.params.name
     else
-      model.session.find(name: client.name).sort('date').exec (err, sessions) ->
-        model.payment.find({name: client.name}).sort('date').exec (err, payments) ->
-          client.sessions = sessions
-          client.payments = payments
+      async.parallel {
+        sessions: (callback)->
+          model.sessions.find(name: client.name).sort('date').exec(callback)
+        payments: (callback)->
+          model.payments.find(name: client.name).sort('date').exec(callback)
+      }, (err, results)->
+          client.sessions = results.sessions
+          client.payments = results.payments
           render req, res, 
-            title: req.params.name
+            title: client.name
             seed:
               view: 'client'
               data: client
 
 app.post '/client/:name', (req, res) ->
-  model.client
+  model.clients
     .update(
       {name: new RegExp('.*' + req.params.name + '.*', 'i')},
       req.body
@@ -139,22 +143,11 @@ app.post '/client/:name', (req, res) ->
       res.send()
 
 app.post '/db/:collection', (req, res) ->
-  doc = new model[req.params.collection](req.body)
-  doc.save ()->
-    res.send()
-
-app.post '/client/:name/session', (req, res) ->
-  model.client.findOne(name: new RegExp('.*' + req.params.name + '.*', 'i')).exec (err, client) ->
-    session = new model.session(req.body);
-    session.name = client.name;
-    session.save ()->
-      res.send()
-
-app.post '/client/:name/payment', (req, res) ->
-  model.client.findOne(name: new RegExp('.*' + req.params.name + '.*', 'i')).exec (err, client) ->
-    payment = new model.payment(req.body);
-    payment.name = client.name;
-    payment.save ()->
+  if not req.params.collection in model
+    res.send 500, req.params.collection + ' is not a valid collection'
+  else
+    doc = new model[req.params.collection](req.body)
+    doc.save ()->
       res.send()
 
 # start

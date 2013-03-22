@@ -27,10 +27,16 @@
       return $('#add-session-form').fadeIn();
     },
     addSession: function(e) {
-      var url;
+      var client;
       e.preventDefault();
-      url = '/client/{0}/session'.supplant([this.model.get('name')]);
-      return $.post(url, $('#add-session-form').serializeObject(), $('#add-session-form').hide(), $('#add-session').fadeIn(), location.reload());
+      client = RJS.merge({
+        name: this.model.get('name')
+      }, $('#add-session-form').serializeObject());
+      return $.post('/db/sessions', client, function() {
+        $('#add-session-form').hide();
+        $('#add-session').fadeIn();
+        return location.reload();
+      });
     },
     cancelAddSession: function(e) {
       e.preventDefault();
@@ -43,10 +49,16 @@
       return $('#add-payment-form').fadeIn();
     },
     addPayment: function(e) {
-      var url;
+      var client;
       e.preventDefault();
-      url = '/client/{0}/payment'.supplant([this.model.get('name')]);
-      return $.post(url, $('#add-payment-form').serializeObject(), $('#add-payment-form').hide(), $('#add-payment').fadeIn(), location.reload());
+      client = RJS.merge({
+        name: this.model.get('name')
+      }, $('#add-payment-form').serializeObject());
+      return $.post('/db/payments', client, function() {
+        $('#add-payment-form').hide();
+        $('#add-payment').fadeIn();
+        return location.reload();
+      });
     },
     cancelAddPayment: function(e) {
       e.preventDefault();

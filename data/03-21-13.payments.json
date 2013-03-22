@@ -1,0 +1,131 @@
+{ "_id" : { "$oid" : "51493007aaa357eec910e7df" }, "amount" : 0.23, "name" : "Todd", "rate" : 32, "date" : "9/1/2012", "notes" : "Reset" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7e0" }, "amount" : 0.5, "name" : "Fong Vang", "rate" : 32, "date" : "1/24/2012", "notes" : "Generosity credit; switching to 1 hr" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7e1" }, "amount" : 0.5, "name" : "Nick Vitullo", "rate" : 40, "date" : "11/14/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7e2" }, "amount" : 1, "name" : "Arvind Chava", "rate" : 45, "date" : "2/25/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7e3" }, "amount" : 1, "name" : "Arvind Chava", "rate" : 45, "date" : "3/13/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7e4" }, "amount" : 1, "name" : "Ben Dunn", "rate" : 45, "date" : "3/11/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7e5" }, "amount" : 1, "name" : "Ben Dunn", "rate" : 45, "date" : "3/16/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7e6" }, "amount" : 1, "name" : "Ben Dunn", "rate" : 45, "date" : "3/17/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7e7" }, "amount" : 1, "name" : "Ben Dunn", "rate" : 45, "date" : "3/18/2013", "notes" : 45, "field5" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7e8" }, "amount" : 1, "name" : "Cameron Crook", "rate" : 40, "date" : "11/20/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7e9" }, "amount" : 1, "name" : "Dahn Kim", "rate" : 45, "date" : "3/3/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7ea" }, "amount" : 1, "name" : "Daniel Lee", "rate" : 45, "date" : "2/4/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7eb" }, "amount" : 1, "name" : "Daniel Shulkin", "rate" : 40, "date" : "0/27/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7ec" }, "amount" : 1, "name" : "Daniel Shulkin", "rate" : 40, "date" : "1/11/2012", "notes" : "", "field5" : "Offered availability" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7ed" }, "amount" : 1, "name" : "Daniel Shulkin", "rate" : 40, "date" : "1/18/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7ee" }, "amount" : 1, "name" : "Fong Vang", "rate" : 32, "date" : "1/25/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7ef" }, "amount" : 1, "name" : "Fong Vang", "rate" : 32, "date" : "2/8/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7f0" }, "amount" : 1, "name" : "Jamie Shiller", "rate" : 45, "date" : "3/11/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7f1" }, "amount" : 1, "name" : "Jamie Shiller", "rate" : 45, "date" : "3/2/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7f2" }, "amount" : 1, "name" : "Jo Anne Ciminello", "rate" : 45, "date" : "2/16/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7f3" }, "amount" : 1, "name" : "Laura Mattson", "rate" : 45, "date" : "3/3/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7f4" }, "amount" : 1, "name" : "Lyn Booth", "rate" : 45, "date" : "2/12/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7f5" }, "amount" : 1, "name" : "Matt Sinclair", "rate" : 40, "date" : "11/27/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7f6" }, "amount" : 1, "name" : "Natalie Jorion", "rate" : 45, "date" : "1/29/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7f7" }, "amount" : 1, "name" : "Nathan Mallipeddi", "rate" : 40, "date" : "11/12/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7f8" }, "amount" : 1, "name" : "Nathan Mallipeddi", "rate" : 40, "date" : "11/26/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7f9" }, "amount" : 1, "name" : "Nathan Mallipeddi", "rate" : 40, "date" : "11/5/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7fa" }, "amount" : 1, "name" : "Nathan Mallipeddi", "rate" : 40, "date" : "11/8/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7fb" }, "amount" : 1, "name" : "Nathan Mallipeddi", "rate" : 40, "date" : "12/11/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7fc" }, "amount" : 1, "name" : "Nathan Mallipeddi", "rate" : 40, "date" : "12/18/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7fd" }, "amount" : 1, "name" : "Nathan Mallipeddi", "rate" : 40, "date" : "12/4/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7fe" }, "amount" : 1, "name" : "Paula Brunkhorst", "rate" : 40, "date" : "10/27/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e7ff" }, "amount" : 1, "name" : "Paula Brunkhorst", "rate" : 40, "date" : "3/3/2013", "notes" : "RESET" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e800" }, "amount" : 1, "name" : "Rando Muzashvili", "rate" : 45, "date" : "2/16/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e801" }, "amount" : 1, "name" : "Rando Muzashvili", "rate" : 45, "date" : "2/17/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e802" }, "amount" : 1, "name" : "Rando Muzashvili", "rate" : 45, "date" : "3/10/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e803" }, "amount" : 1, "name" : "Richelle Speights", "rate" : 45, "date" : "3/2/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e804" }, "amount" : 1, "name" : "Ron", "rate" : 24, "date" : "5/1/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e805" }, "amount" : 1, "name" : "Samantha Iannucci", "rate" : 45, "date" : "3/1/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e806" }, "amount" : 1, "name" : "Samantha Iannucci", "rate" : 45, "date" : "3/10/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e807" }, "amount" : 1, "name" : "Sebastian Zaba", "rate" : 30, "date" : "11/2/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e808" }, "amount" : 1, "name" : "Shane Schmid", "rate" : 45, "date" : "3/18/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e809" }, "amount" : 1, "name" : "Shayne Fedorka", "rate" : 40, "date" : "12/25/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e80a" }, "amount" : 1, "name" : "Steven Flannery", "rate" : 30, "date" : "10/27/2012", "notes" : "$30" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e80b" }, "amount" : 1, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "10/27/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e80c" }, "amount" : 1, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "10/28/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e80d" }, "amount" : 1, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "10/28/2012", "notes" : "", "field5" : "Free (technical difficulties)" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e80e" }, "amount" : 1, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "10/28/2012", "notes" : "", "field5" : "Informed of new rate" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e80f" }, "amount" : 1, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "11/1/2012", "notes" : "$40" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e810" }, "amount" : 1, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "11/13/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e811" }, "amount" : 1, "name" : "Tiki Owens", "rate" : 45, "date" : "2/4/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e812" }, "amount" : 1, "name" : "Tiki Owens", "rate" : 45, "date" : "2/9/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e813" }, "amount" : 1.5, "name" : "Adrienne", "rate" : 30, "date" : "10/16/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e814" }, "amount" : 1.5, "name" : "Adrienne", "rate" : 30, "date" : "10/20/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e815" }, "amount" : 1.5, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "11/15/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e816" }, "amount" : 1.5, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "11/22/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e817" }, "amount" : 1.5, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "11/30/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e818" }, "amount" : 1.5, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "11/8/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e819" }, "amount" : 1.5, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "12/6/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e81a" }, "amount" : 10, "name" : "Arvind Chava", "rate" : 45, "date" : "3/17/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e81b" }, "amount" : 10, "name" : "Austin Brown", "rate" : 40, "date" : "1/22/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e81c" }, "amount" : 10, "name" : "Austin Brown", "rate" : 40, "date" : "2/1/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e81d" }, "amount" : 10, "name" : "Chris Huh", "rate" : 40, "date" : "11/27/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e81e" }, "amount" : 10, "name" : "Chris Huh", "rate" : 40, "date" : "11/27/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e81f" }, "amount" : 10, "name" : "Chris Huh", "rate" : 40, "date" : "12/9/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e820" }, "amount" : 10, "name" : "Eddie Zahrebelski", "rate" : 40, "date" : "11/19/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e821" }, "amount" : 10, "name" : "Haston Haxel", "rate" : 40, "date" : "11/17/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e822" }, "amount" : 10, "name" : "Haston Haxel", "rate" : 40, "date" : "11/3/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e823" }, "amount" : 10, "name" : "Haston Haxel", "rate" : 40, "date" : "12/1/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e824" }, "amount" : 10, "name" : "Jon Young", "rate" : 40, "date" : "11/13/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e825" }, "amount" : 10, "name" : "Jon Young", "rate" : 40, "date" : "12/18/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e826" }, "amount" : 10, "name" : "Jon Young", "rate" : 40, "date" : "12/7/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e827" }, "amount" : 10, "name" : "Lyn Booth", "rate" : 45, "date" : "2/13/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e828" }, "amount" : 10, "name" : "Seth Taddiken", "rate" : 24, "date" : "8/10/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e829" }, "amount" : 10, "name" : "Todd", "rate" : 45, "date" : "3/6/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e82a" }, "amount" : 2, "name" : "Adrienne", "rate" : 30, "date" : "9/18/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e82b" }, "amount" : 2, "name" : "Adrienne", "rate" : 30, "date" : "9/30/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e82c" }, "amount" : 2, "name" : "Arvind Chava", "rate" : 45, "date" : "3/9/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e82d" }, "amount" : 2, "name" : "Daniel Shulkin", "rate" : 40, "date" : "1/19/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e82e" }, "amount" : 2, "name" : "Samantha Iannucci", "rate" : 45, "date" : "3/2/2013", "notes" : "Invoiced for remaining balance." }
+{ "_id" : { "$oid" : "51493007aaa357eec910e82f" }, "amount" : 2, "name" : "Sebastian Zaba", "rate" : 30, "date" : "10/31/2012", "notes" : "Wants to stick with Paypal" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e830" }, "amount" : 2, "name" : "Sophia Lui", "rate" : 40, "date" : "12/1/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e831" }, "amount" : 2, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "11/11/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e832" }, "amount" : 2, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "11/20/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e833" }, "amount" : 2, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "11/25/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e834" }, "amount" : 2, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "11/4/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e835" }, "amount" : 2, "name" : "Svitlana Shmargunova", "rate" : 40, "date" : "12/2/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e836" }, "amount" : 2, "name" : "Todd", "rate" : 24, "date" : "2/13/2012", "notes" : "2 Sessions Paid" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e837" }, "amount" : 2.5, "name" : "Adrienne", "rate" : 30, "date" : "8/4/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e838" }, "amount" : 20, "name" : "Haston Haxel", "rate" : 45, "date" : "2/11/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e839" }, "amount" : 3, "name" : "Angel Garcia Jr", "rate" : 32, "date" : "10/24/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e83a" }, "amount" : 3, "name" : "Arvind Chava", "rate" : 45, "date" : "3/13/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e83b" }, "amount" : 3, "name" : "Austin Brown", "rate" : 40, "date" : "1/25/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e83c" }, "amount" : 3, "name" : "David Handel", "rate" : 45, "date" : "3/19/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e83d" }, "amount" : 3, "name" : "Eddie Zahrebelski", "rate" : 40, "date" : "11/16/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e83e" }, "amount" : 3, "name" : "Hal Steinkopf", "rate" : 30, "date" : "0/16/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e83f" }, "amount" : 3, "name" : "Laura Mattson", "rate" : 45, "date" : "3/10/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e840" }, "amount" : 3, "name" : "Mike Mioduski", "rate" : 45, "date" : "2/9/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e841" }, "amount" : 3, "name" : "Nick Vitullo", "rate" : 30, "date" : "10/25/2012", "notes" : "$30/hr" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e842" }, "amount" : 3, "name" : "Nick Vitullo", "rate" : 40, "date" : "10/29/2012", "notes" : "$40/hr" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e843" }, "amount" : 3, "name" : "Nick Vitullo", "rate" : 40, "date" : "11/10/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e844" }, "amount" : 3, "name" : "Nick Vitullo", "rate" : 40, "date" : "11/29/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e845" }, "amount" : 3, "name" : "Nick Vitullo", "rate" : 40, "date" : "12/10/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e846" }, "amount" : 3, "name" : "Paula Brunkhorst", "rate" : 40, "date" : "11/16/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e847" }, "amount" : 3, "name" : "Samantha Iannucci", "rate" : 45, "date" : "3/19/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e848" }, "amount" : 3, "name" : "Tiki Owens", "rate" : 45, "date" : "2/18/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e849" }, "amount" : 3, "name" : "Tiki Owens", "rate" : 45, "date" : "3/12/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e84a" }, "amount" : 3, "name" : "Todd", "rate" : 45, "date" : "2/12/2013", "notes" : "Switched to $45/hr" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e84b" }, "amount" : 3, "name" : "Todd", "rate" : 45, "date" : "2/17/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e84c" }, "amount" : 3, "name" : "Todd", "rate" : 45, "date" : "3/1/2013", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e84d" }, "amount" : 3, "name" : "Yasir Safdar", "rate" : 40, "date" : "11/14/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e84e" }, "amount" : 3.5, "name" : "Adrienne", "rate" : 30, "date" : "8/1/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e84f" }, "amount" : 3.5, "name" : "Chris Huh", "rate" : 40, "date" : "12/21/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e850" }, "amount" : 4, "name" : "Todd", "rate" : 32, "date" : "12/9/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e851" }, "amount" : 5, "name" : "Anna Pearson", "rate" : 24, "date" : "3/6/2012", "notes" : "Julian acknowledges payment on 3/6" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e852" }, "amount" : 5, "name" : "Dani", "rate" : 24, "date" : "4/8/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e853" }, "amount" : 5, "name" : "Paula Brunkhorst", "rate" : 40, "date" : "11/3/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e854" }, "amount" : 5, "name" : "Simon Zhu", "rate" : 40, "date" : "11/3/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e855" }, "amount" : 5, "name" : "Todd", "rate" : 32, "date" : "8/31/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e856" }, "amount" : 5, "name" : "Torin", "rate" : 24, "date" : "1/16/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e857" }, "amount" : 5, "name" : "Torin", "rate" : 24, "date" : "11/18/2011", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e858" }, "amount" : 5, "name" : "Torin", "rate" : 24, "date" : "5/30/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e859" }, "amount" : 7.27, "name" : "Todd", "rate" : 32, "date" : "7/20/2012", "notes" : "5 Sessions @ Level II" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e85a" }, "amount" : 8, "name" : "Seth Taddiken", "rate" : 24, "date" : "10/30/2012", "notes" : "Last series at Level 1 rate" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e85b" }, "amount" : 8, "name" : "Torin", "rate" : 24, "date" : "3/9/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e85c" }, "amount" : 1, "name" : "Kristina Garfinkel", "rate" : 40, "date" : "11/18/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e85d" }, "amount" : 1, "name" : "Kristina Garfinkel", "rate" : 40, "date" : "11/25/2012", "notes" : "" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e85e" }, "amount" : 1, "name" : "Kristina Garfinkel", "rate" : 40, "date" : "11/25/2012", "notes" : "Credit for miscommunication about 90 min sessions" }
+{ "_id" : { "$oid" : "51493007aaa357eec910e85f" }, "amount" : 3, "name" : "Kristina Garfinkel", "rate" : 45, "date" : "2/11/2013", "notes" : "" }
+{ "name" : "Shane Schmid", "date" : { "$date" : 1363672800000 }, "amount" : 3, "__v" : 0, "_id" : { "$oid" : "5149e130f3731bf340000004" } }
+{ "name" : "Ben Dunn", "date" : { "$date" : 1363759200000 }, "amount" : 1, "__v" : 0, "_id" : { "$oid" : "514aff0ac6a4394f48000005" } }

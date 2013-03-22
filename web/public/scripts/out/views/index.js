@@ -2,20 +2,19 @@
 (function() {
 
   client.views.index = Backbone.View.extend({
+    initialize: function() {
+      return this.bind('render', function() {
+        var r;
+        r = new Raphael('sessions-per-day');
+        return r.linechart(0, 0, 450, 100, this.model.get('sessionsPerDay').x, [this.model.get('sessionsPerDay').y]);
+      });
+    },
     build: function() {
       return [
         '#page-index', [
           [
             '.container-narrow', [
-              [
-                '.masthead', [
-                  [
-                    'h3 a.muted', {
-                      href: '/'
-                    }, 'College Coding'
-                  ]
-                ]
-              ], ['hr'], [
+              new client.partials.Header(), [
                 '.row-fluid.marketing', [
                   [
                     '.span4 aside#active-clients.client-list', [
@@ -29,7 +28,7 @@
                         })
                       ]
                     ]
-                  ], ['.span8', ['Health Indicator Charts']]
+                  ], ['.span8', [['#sessions-per-day'], ['#sessions-per-day2']]]
                 ]
               ], [
                 '.row-fluid.marketing', [
@@ -47,7 +46,7 @@
                     ]
                   ], ['.span8', ['Health Indicator Charts']]
                 ]
-              ], new client.partials.footer()
+              ], new client.partials.Footer()
             ]
           ]
         ]

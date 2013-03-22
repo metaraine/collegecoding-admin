@@ -1,0 +1,4 @@
+name,rate,date,amount,notes
+Matt Sinclair,40,11/27/2012,1,
+Matt Sinclair,40,12/2/2012,0,"Must prepare: Authentication, Database (SQLExpress), no dependencies, possible SPA"
+Matt Sinclair,40,12/7/2012,-1,

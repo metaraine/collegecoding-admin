@@ -1,11 +1,18 @@
 client.views.index = Backbone.View.extend(
+
+  initialize: ()->
+    this.bind 'render', ()->
+      r = new Raphael('sessions-per-day')
+
+      r.linechart(0, 0, 450, 100, 
+        this.model.get('sessionsPerDay').x, 
+        [this.model.get('sessionsPerDay').y]
+      )
+
   build: () ->
     ['#page-index', [
       ['.container-narrow', [
-        ['.masthead', [
-          ['h3 a.muted', {href: '/'}, 'College Coding']
-        ]]
-        ['hr']
+        new client.partials.Header(),
         ['.row-fluid.marketing', [
 
           ['.span4 aside#active-clients.client-list', [
@@ -16,7 +23,8 @@ client.views.index = Backbone.View.extend(
           ]]
 
           ['.span8', [
-            'Health Indicator Charts'
+            ['#sessions-per-day']
+            ['#sessions-per-day2']
           ]]
         ]]
 
@@ -35,7 +43,7 @@ client.views.index = Backbone.View.extend(
 
         ]]
 
-        new client.partials.footer()
+        new client.partials.Footer()
       ]]
     ]]
   )

@@ -1,12 +1,12 @@
-client.views.client = Backbone.View.extend(
+client.views.client = Backbone.View.extend
 
   events:
-    'click #add-session': 'showAddSession'
-    'click #add-session-form .add': 'addSession'
-    'click #add-session-form .cancel': 'cancelAddSession'
-    'click #add-payment': 'showAddPayment'
-    'click #add-payment-form .add': 'addPayment'
-    'click #add-payment-form .cancel': 'cancelAddPayment'
+    'click #add-session':               'showAddSession'
+    'click #add-session-form .add':     'addSession'
+    'click #add-session-form .cancel':  'cancelAddSession'
+    'click #add-payment':               'showAddPayment'
+    'click #add-payment-form .add':     'addPayment'
+    'click #add-payment-form .cancel':  'cancelAddPayment'
 
   initialize: () ->
     that = this
@@ -24,7 +24,7 @@ client.views.client = Backbone.View.extend(
 
   addSession: (e) ->
     e.preventDefault()
-    url = '/client/{0}/push/sessions'.supplant([this.model.get('name')])
+    url = '/client/{0}/session'.supplant([this.model.get('name')])
     $.post(url, $('#add-session-form').serializeObject(),
       $('#add-session-form').hide()
       $('#add-session').fadeIn()
@@ -43,7 +43,7 @@ client.views.client = Backbone.View.extend(
 
   addPayment: (e) ->
     e.preventDefault()
-    url = '/client/{0}/push/payments'.supplant([this.model.get('name')])
+    url = '/client/{0}/payment'.supplant([this.model.get('name')])
     $.post(url, $('#add-payment-form').serializeObject(),
       $('#add-payment-form').hide()
       $('#add-payment').fadeIn()
@@ -72,10 +72,7 @@ client.views.client = Backbone.View.extend(
   build: () ->
     ['#page-client', [
       ['.container-narrow', [
-        ['.masthead', [
-          ['h3 a.muted', {href: '/'}, 'College Coding']
-        ]]
-        ['hr']
+        new client.partials.Header(),
         ['h1', { 'data-name': 'name', contenteditable: true }, this.model.get('name')]
         ['.row-fluid.marketing', [
 
@@ -86,18 +83,17 @@ client.views.client = Backbone.View.extend(
                 ['td', moment(this.model.get('firstContact')).format('MMMM Do, YYYY')]
               ]]
               this.buildEditableRow('Client Type', 'clientType')
-              this.buildEditableRow('Balance', 'balance')
               this.buildEditableRow('Platform', 'platform')
+              this.buildEditableRow('Email', 'email')
               this.buildEditableRow('Timezone', 'timezone')
-              this.buildEditableRow('Referrer', 'referrer')
               this.buildEditableRow('City', 'city')
               this.buildEditableRow('State', 'state')
               this.buildEditableRow('Phone', 'phone')
               this.buildEditableRow('School', 'school')
-              this.buildEditableRow('Program', 'program')
-              this.buildEditableRow('Class', 'class')
+              this.buildEditableRow('Program', 'schoolProgram')
+              this.buildEditableRow('Class', 'schoolClass')
+              this.buildEditableRow('Referrer', 'referrer')
               this.buildEditableRow('Notes', 'notes')
-              this.buildEditableRow('Notes2', 'notes2')
             ]]
           ]]
 
@@ -131,14 +127,15 @@ client.views.client = Backbone.View.extend(
           ]]
         ]]
 
-        new client.partials.footer()
+        new client.partials.Footer()
       ]]
     ]]
 
   buildSession: (session) ->
     ['tr', [
       ['td', moment(session.date).format('M/D/YY')]
-      ['td', "#{session.duration} hr"]
+      ['td', session.duration]
+      ['td', session.notes]
     ]]
 
   buildPayment: (payment) ->
@@ -151,4 +148,3 @@ client.views.client = Backbone.View.extend(
     paymentHours = this.model.get('payments').pluck('amount')
     sessionHours = this.model.get('sessions').pluck('duration').map (x) -> -x
     _.reduce(paymentHours.concat(sessionHours), ((x,y) -> x+y), 0)
-)

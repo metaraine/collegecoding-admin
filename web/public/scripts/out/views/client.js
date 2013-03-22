@@ -29,7 +29,7 @@
     addSession: function(e) {
       var url;
       e.preventDefault();
-      url = '/client/{0}/push/sessions'.supplant([this.model.get('name')]);
+      url = '/client/{0}/session'.supplant([this.model.get('name')]);
       return $.post(url, $('#add-session-form').serializeObject(), $('#add-session-form').hide(), $('#add-session').fadeIn(), location.reload());
     },
     cancelAddSession: function(e) {
@@ -45,7 +45,7 @@
     addPayment: function(e) {
       var url;
       e.preventDefault();
-      url = '/client/{0}/push/payments'.supplant([this.model.get('name')]);
+      url = '/client/{0}/payment'.supplant([this.model.get('name')]);
       return $.post(url, $('#add-payment-form').serializeObject(), $('#add-payment-form').hide(), $('#add-payment').fadeIn(), location.reload());
     },
     cancelAddPayment: function(e) {
@@ -74,22 +74,14 @@
         '#page-client', [
           [
             '.container-narrow', [
-              [
-                '.masthead', [
-                  [
-                    'h3 a.muted', {
-                      href: '/'
-                    }, 'College Coding'
-                  ]
-                ]
-              ], ['hr'], [
+              new client.partials.Header(), [
                 'h1', {
                   'data-name': 'name',
                   contenteditable: true
                 }, this.model.get('name')
               ], [
                 '.row-fluid.marketing', [
-                  ['.span6', [['table.def-list', [['tr', [['td', 'First Contact'], ['td', moment(this.model.get('firstContact')).format('MMMM Do, YYYY')]]], this.buildEditableRow('Client Type', 'clientType'), this.buildEditableRow('Balance', 'balance'), this.buildEditableRow('Platform', 'platform'), this.buildEditableRow('Timezone', 'timezone'), this.buildEditableRow('Referrer', 'referrer'), this.buildEditableRow('City', 'city'), this.buildEditableRow('State', 'state'), this.buildEditableRow('Phone', 'phone'), this.buildEditableRow('School', 'school'), this.buildEditableRow('Program', 'program'), this.buildEditableRow('Class', 'class'), this.buildEditableRow('Notes', 'notes'), this.buildEditableRow('Notes2', 'notes2')]]]], [
+                  ['.span6', [['table.def-list', [['tr', [['td', 'First Contact'], ['td', moment(this.model.get('firstContact')).format('MMMM Do, YYYY')]]], this.buildEditableRow('Client Type', 'clientType'), this.buildEditableRow('Platform', 'platform'), this.buildEditableRow('Email', 'email'), this.buildEditableRow('Timezone', 'timezone'), this.buildEditableRow('City', 'city'), this.buildEditableRow('State', 'state'), this.buildEditableRow('Phone', 'phone'), this.buildEditableRow('School', 'school'), this.buildEditableRow('Program', 'schoolProgram'), this.buildEditableRow('Class', 'schoolClass'), this.buildEditableRow('Referrer', 'referrer'), this.buildEditableRow('Notes', 'notes')]]]], [
                     '.span6', [
                       ['h4', 'Balance'], ['table.def-list', this.buildBalance()], ['h4', 'Sessions'], ['table.def-list', this.model.get('sessions').map(this.buildSession)], [
                         'a#add-session', {
@@ -135,14 +127,14 @@
                     ]
                   ]
                 ]
-              ], new client.partials.footer()
+              ], new client.partials.Footer()
             ]
           ]
         ]
       ];
     },
     buildSession: function(session) {
-      return ['tr', [['td', moment(session.date).format('M/D/YY')], ['td', "" + session.duration + " hr"]]];
+      return ['tr', [['td', moment(session.date).format('M/D/YY')], ['td', session.duration], ['td', session.notes]]];
     },
     buildPayment: function(payment) {
       return ['tr', [['td', moment(payment.date).format('M/D/YY')], ['td', payment.amount]]];

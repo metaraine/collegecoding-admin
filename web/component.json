@@ -6,10 +6,14 @@
     "bootstrap": "http://twitter.github.com/bootstrap/assets/bootstrap.zip",
     "underscore": "~1.4.4",
     "rjs": "https://raw.github.com/RaineOrShine/rjs/master/deploy/rjs.2.9.0.js",
-    "creatable": "https://raw.github.com/RaineOrShine/creatable/master/deploy/creatable.2.0.js",
-    "creatable-backbone": "https://raw.github.com/RaineOrShine/creatable/master/deploy/creatable.backbone.1.1.js",
+    "creatable": "https://raw.github.com/RaineOrShine/creatable/master/deploy/creatable-2.1.0.js",
+    "creatable-backbone": "https://raw.github.com/RaineOrShine/creatable/master/deploy/creatable.backbone-2.0.0.js",
     "moment": "~2.0.0",
     "jquery.hotkeys": "https://github.com/jeresig/jquery.hotkeys.git#~0.1.0",
-    "serializeObject": "https://github.com/victorarias/serializeObject.git#~1.0.0"
+    "serializeObject": "https://github.com/victorarias/serializeObject.git#~1.0.0",
+    "raphael": "http://raphaeljs.com/raphael.js",
+    "g.raphael": "http://g.raphaeljs.com/g.raphael.js",
+    "g.line": "http://g.raphaeljs.com/g.line.js",
+    "g.bar": "http://g.raphaeljs.com/g.bar.js"
   }
 }

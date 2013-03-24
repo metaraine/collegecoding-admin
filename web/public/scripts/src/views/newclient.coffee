@@ -3,15 +3,21 @@ client.views.newclient = Backbone.View.extend
   events:
     'click #create': 'create'
 
+  initialize: ()->
+    that = this
+    $(document).on 'keypress', (e)->
+      if e.keyCode is 13
+        that.create()
+
   create: ()->
-    $.post '/db/client', {
+    $.post '/db/clients', {
       name:         this.model.get 'name'
-      clientType:   'lead'
+      clientType:   'Lead'
       referrer:     'Google'
       created:      new Date()
       firstContact: new Date()
     }, ()->
-      console.log('done')
+      location.reload()
 
   build: ()->
     ['#page-newclient', [

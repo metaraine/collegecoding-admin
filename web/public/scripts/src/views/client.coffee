@@ -144,6 +144,7 @@ client.views.client = Backbone.View.extend
     ['tr', [
       ['td', moment(payment.date).format('M/D/YY')]
       ['td', payment.amount]
+      ['td', payment.notes]
     ]]
 
   buildBalance: () ->

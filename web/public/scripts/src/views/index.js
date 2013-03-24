@@ -4,18 +4,18 @@
   client.views.index = Backbone.View.extend({
     initialize: function() {
       return this.bind('render', function() {
-        var item, r, sessionsPerWeekChart, _i, _len, _ref, _results;
+        var date, item, r, sessionsPerWeekChart, _i, _len, _ref, _results;
         r = new Raphael('sessions-per-day');
-        sessionsPerWeekChart = r.linechart(10, 10, 700, 120, this.model.get('perDayXY7DaySum').x, [this.model.get('perDayXY7DaySum').y, [0, 30]], {
-          axis: '0 0 1 1',
-          axisystep: 3,
-          colors: ['#2F69BF', 'transparent']
+        sessionsPerWeekChart = r.linechart(0, 0, 700, 120, this.model.get('perDayXY7DaySum').x, [this.model.get('perDayXY7DaySum').y], {
+          axis: '0 0 1 1'
         });
         _ref = sessionsPerWeekChart.axis[0].text.items;
         _results = [];
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           item = _ref[_i];
-          _results.push(item.attr('text', moment(parseInt(item.attr('text'))).format('M/DD')));
+          date = new Date(parseInt(item.attr('text')));
+          console.log(date);
+          _results.push(item.attr('text', moment(date).format('M/DD')));
         }
         return _results;
       });

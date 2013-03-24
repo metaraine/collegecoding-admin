@@ -74,15 +74,18 @@ model =
     date: Date
     notes: String
 
+rollingSum = (xySeries, n)->
+  (xySeries[i-n..i].reduce((x,y)->x+y) for i in [n..xySeries.length])
+
 # controllers
 app.get '/', (req, res) ->
   async.parallel {
     clients: (callback)->
       model.clients
-        .find($or: [{clientType: "Current Client"}, {clientType: "Lead"}])
+        .find({clientType: 'client', clientStatus: 'active'}) # how to do a join?
         .sort('name')
         .exec callback
-    sessions: (callback)->
+    sessions3Months: (callback)->
       model.sessions
         .find(date: { $gte: new Date(Date.now() - 3 * 30 * 24 * 60 * 60 * 1000) })
         .sort('date')
@@ -90,12 +93,17 @@ app.get '/', (req, res) ->
   }, (err, results)->
 
     # get sessions per day time series
-    dateValueSeries = rjs.orderedGroup(results.sessions, 'date').map((dateGroup)->
+    perDaySeries = rjs.orderedGroup(results.sessions3Months, 'date').map (dateGroup)->
       date: new Date(dateGroup.key).getTime()
       value: dateGroup.items.length
-    )
-    dates = dateValueSeries.pluck('date')
-    values = dateValueSeries.pluck('value')
+    perDayXY =
+      x: perDaySeries.pluck('date')
+      y: perDaySeries.pluck('value')
+
+    # get rolling 7-day sum
+    perDayXY7DaySum =
+      x: perDayXY.x[6..]
+      y: rollingSum(perDayXY.y, 7)
 
     render req, res, 
       title: 'College Coding Admin'
@@ -103,11 +111,8 @@ app.get '/', (req, res) ->
         view: 'index'
         data: 
           # test RJS.findByProperty on the server-side
-          activeClients: results.clients.filter (client) -> client.clientType is 'Current Client'
-          leads:         results.clients.filter (client) -> client.clientType is 'Lead'
-          sessionsPerDay:
-            x: dates
-            y: values
+          perDayXY: perDayXY
+          perDayXY7DaySum: perDayXY7DaySum
 
 app.get '/client/:name', (req, res) ->
   model.clients.findOne(name: new RegExp('.*' + req.params.name + '.*', 'i')).exec (err, client)->
@@ -143,7 +148,7 @@ app.post '/client/:name', (req, res) ->
       res.send()
 
 app.post '/db/:collection', (req, res) ->
-  if not req.params.collection in model
+  if req.params.collection not of model
     res.send 500, req.params.collection + ' is not a valid collection'
   else
     doc = new model[req.params.collection](req.body)

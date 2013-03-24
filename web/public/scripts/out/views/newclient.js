@@ -5,15 +5,24 @@
     events: {
       'click #create': 'create'
     },
+    initialize: function() {
+      var that;
+      that = this;
+      return $(document).on('keypress', function(e) {
+        if (e.keyCode === 13) {
+          return that.create();
+        }
+      });
+    },
     create: function() {
-      return $.post('/db/client', {
+      return $.post('/db/clients', {
         name: this.model.get('name'),
-        clientType: 'lead',
+        clientType: 'Lead',
         referrer: 'Google',
         created: new Date(),
         firstContact: new Date()
       }, function() {
-        return console.log('done');
+        return location.reload();
       });
     },
     build: function() {

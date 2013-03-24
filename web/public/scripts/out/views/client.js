@@ -149,7 +149,7 @@
       return ['tr', [['td', moment(session.date).format('M/D/YY')], ['td', session.duration], ['td', session.notes]]];
     },
     buildPayment: function(payment) {
-      return ['tr', [['td', moment(payment.date).format('M/D/YY')], ['td', payment.amount]]];
+      return ['tr', [['td', moment(payment.date).format('M/D/YY')], ['td', payment.amount], ['td', payment.notes]]];
     },
     buildBalance: function() {
       var paymentHours, sessionHours;

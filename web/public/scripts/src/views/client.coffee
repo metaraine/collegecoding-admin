@@ -85,6 +85,8 @@ client.views.client = Backbone.View.extend
                 ['td', moment(this.model.get('firstContact')).format('MMMM Do, YYYY')]
               ]]
               this.buildEditableRow('Client Type', 'clientType')
+              this.buildEditableRow('Client Status', 'clientStatus')
+              this.buildEditableRow('Lead Status', 'leadStatus')
               this.buildEditableRow('Platform', 'platform')
               this.buildEditableRow('Email', 'email')
               this.buildEditableRow('Timezone', 'timezone')

@@ -47,6 +47,8 @@
       _id: mongoose.Schema.ObjectId,
       name: String,
       clientType: String,
+      clientStatus: String,
+      leadStatus: String,
       created: Date,
       firstContact: Date,
       balance: Number,

@@ -1,53 +1,13 @@
-# server-side
-
-* Procfile
-* node
-* coffee
-* stylus
-* express
-* mongodb
-* underscore
-* rjs
-* jade
-* requiredir
-* async
-* bower
-
-# client-side
-
-* bootstrap
-* underscore
-* backbone
-* rjs
-* creatable
-
-# directory structure
-
-root          // coffee output (NOTE: different than client-side because app.js needs to be relative to root)
-  |- models
-  |- lib      // 3rd party libraries
-  |- src      // coffee input
-    |- models
-  |- view     // jade templates
-  |- public
-    |- components
-    |- img
-    |- style
-    |- scripts
-       |- lib     // 3rd party libraries
-       |- out     // coffee output
-       |- src     // coffee input
-
 # setup
 npm install
 bower install
 
 # background jobs
+mongod &
+smog &
 stylus public/style/ -w &
 coffee -o ./ -cw src/ &
 coffee -o public/scripts/out/ -cw public/scripts/src/ &
-mongod &
-smog &
 
 # start app
 foreman start

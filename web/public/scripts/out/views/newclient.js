@@ -17,7 +17,7 @@
     create: function() {
       return $.post('/db/clients', {
         name: this.model.get('name'),
-        clientType: 'Lead',
+        clientType: 'lead',
         leadStatus: 'hot',
         referrer: 'Google',
         created: new Date(),

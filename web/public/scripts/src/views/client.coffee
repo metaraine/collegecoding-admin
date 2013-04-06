@@ -1,3 +1,5 @@
+defaultRate = 55
+
 client.views.client = Backbone.View.extend
 
   events:
@@ -72,6 +74,9 @@ client.views.client = Backbone.View.extend
     ]]
 
   build: () ->
+    sessions = this.model.get('sessions')
+    payments = this.model.get('payments')
+    rate = if payments.length then payments.index(-1).rate else defaultRate
     ['#page-client', [
       ['.container-narrow', [
         new client.partials.Header(),
@@ -97,7 +102,6 @@ client.views.client = Backbone.View.extend
               this.buildEditableRow('Program', 'schoolProgram')
               this.buildEditableRow('Class', 'schoolClass')
               this.buildEditableRow('Referrer', 'referrer')
-              this.buildEditableRow('Notes', 'notes')
             ]]
           ]]
 
@@ -108,26 +112,33 @@ client.views.client = Backbone.View.extend
             ]
 
             ['h4', 'Sessions']
-            ['table.def-list', this.model.get('sessions').map(this.buildSession)]
+            ['table.def-list', sessions.map(this.buildSession)]
             ['a#add-session', { href: '#' }, 'Add']
             ['form#add-session-form.form-inline.hide', [
               ['input.input-mini', { name: 'date', type: 'text', value: moment().format('M/D/YY') }]
               ['input.input-mini', { name: 'duration', type: 'text', value: 1 }]
+              ['input.input-mini', { name: 'rate', type: 'text', value: rate }]
               ['button.add.btn', 'Add']
               ['button.cancel.btn.btn-link', 'Cancel']
             ]]
 
             ['h4', 'Payments']
             ['table.def-list', 
-              this.model.get('payments').map this.buildPayment
+              payments.map this.buildPayment
             ]
             ['a#add-payment', { href: '#' }, 'Add']
             ['form#add-payment-form.form-inline.hide', [
               ['input.input-mini', { name: 'date', type: 'text', value: moment().format('M/D/YY') }]
               ['input.input-mini', { name: 'amount', type: 'text', value: 1 }]
+              ['input.input-mini', { name: 'rate', type: 'text', value: rate }]
               ['button.add.btn', 'Add']
               ['button.cancel.btn.btn-link', 'Cancel']
             ]]
+          ]]
+
+          ['.span12', [
+            ['h4', 'Notes']
+            ['p', { 'data-name': 'notes', contenteditable: true, html: true }, this.model.get 'notes']
           ]]
         ]]
 

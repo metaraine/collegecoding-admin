@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"perD",
+				"perDayXY"
+			],
+			[
 				"google_con",
 				"google_conversion_id"
 			],
@@ -31,7 +35,7 @@
 			"file": "web/README.md",
 			"settings":
 			{
-				"buffer_size": 837,
+				"buffer_size": 202,
 				"line_ending": "Unix"
 			}
 		},
@@ -39,16 +43,24 @@
 			"file": "minitasks.md",
 			"settings":
 			{
-				"buffer_size": 282,
+				"buffer_size": 329,
 				"line_ending": "Unix",
 				"name": "3/11"
+			}
+		},
+		{
+			"file": "web/views/layout.jade",
+			"settings":
+			{
+				"buffer_size": 1703,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "web/src/app.coffee",
 			"settings":
 			{
-				"buffer_size": 2410,
+				"buffer_size": 4475,
 				"line_ending": "Unix"
 			}
 		},
@@ -56,7 +68,7 @@
 			"file": "web/app.js",
 			"settings":
 			{
-				"buffer_size": 2854,
+				"buffer_size": 5770,
 				"line_ending": "Unix"
 			}
 		},
@@ -64,7 +76,7 @@
 			"file": "web/public/scripts/src/views/index.coffee",
 			"settings":
 			{
-				"buffer_size": 1011,
+				"buffer_size": 1013,
 				"line_ending": "Unix"
 			}
 		},
@@ -72,7 +84,7 @@
 			"file": "web/public/scripts/src/views/client.coffee",
 			"settings":
 			{
-				"buffer_size": 2315,
+				"buffer_size": 5233,
 				"line_ending": "Unix"
 			}
 		},
@@ -80,15 +92,7 @@
 			"file": "web/public/style/main.styl",
 			"settings":
 			{
-				"buffer_size": 1305,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "web/views/layout.jade",
-			"settings":
-			{
-				"buffer_size": 1332,
+				"buffer_size": 1392,
 				"line_ending": "Unix"
 			}
 		}
@@ -96,7 +100,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 27.0,
 		"selected_items":
 		[
 		],
@@ -117,14 +121,27 @@
 	},
 	"file_history":
 	[
-		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/out/views/partials.js",
+		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/src/views/newclient.coffee",
+		"/Users/raine/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/out/views/client.js",
+		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/src/main.coffee",
 		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/src/views/partials.coffee",
 		"/Users/raine/Projects/collegecoding-admin/web/component.json",
+		"/Users/raine/Projects/collegecoding-admin/sessions/Tutoring Session Log - Kristina Garfinkel.csv",
+		"/Users/raine/Projects/collegecoding-admin/sessions/payments.csv",
+		"/Users/raine/Projects/collegecoding-admin/sessions/sessions.csv",
+		"/Users/raine/Projects/collegecoding-admin/sessions/all",
+		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/out/views/partials.js",
+		"/Users/raine/Projects/creatable/creatable.js",
+		"/Users/raine/Projects/creatable/component.json",
+		"/Users/raine/Projects/collegecoding-admin/web/public/components/creatable/index.js",
+		"/Users/raine/Projects/collegecoding-admin/web/src/controller-helper.coffee",
+		"/Users/raine/Projects/collegecoding-admin/web/public/components/creatable-backbone/index.js",
+		"/Users/raine/Projects/creatable/creatable.backbone.js",
+		"/Users/raine/Projects/collegecoding-admin/web/app.js",
 		"/Users/raine/Projects/collegecoding-admin/Client Relationship Manager - Sheet1.csv",
-		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/src/main.coffee",
 		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/out/main.js",
 		"/Users/raine/Projects/collegecoding-admin/sessions & payments.json",
-		"/Users/raine/Projects/collegecoding-admin/web/src/controller-helper.coffee",
 		"/Users/raine/Projects/collegecoding-admin/web/views/layout.jade",
 		"/Users/raine/Downloads/Client Relationship Manager - Sheet1.csv",
 		"/Users/raine/Projects/collegecoding-admin/README.md",
@@ -164,7 +181,6 @@
 		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/main.js",
 		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/scripts/main.coffee",
 		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/normalize.css",
-		"/Users/raine/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/style.css",
 		"/Users/raine/Google Drive/Web & Programming/Projects/collegecoding/webroot/exclude.html",
 		"/Users/raine/Google Drive/Web & Programming/Python/pacman/layouts/bigMaze.lay",
@@ -193,9 +209,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 95.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -203,6 +220,40 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Lead",
+			"lead",
+			"notes",
+			"450",
+			"avg",
+			"sessions",
+			"/client",
+			" in ",
+			"title",
+			"==",
+			"model.",
+			"location",
+			"sessions",
+			"new client",
+			"session",
+			"session\\.",
+			"viewcreator",
+			"payments",
+			"push",
+			"name = ",
+			"Kristina",
+			"kristina",
+			"2.5",
+			"session",
+			"sessions",
+			"title",
+			"payment",
+			"duration",
+			"sessio",
+			"html",
+			"buildedit",
+			"buildFormrow",
+			"send",
+			"render",
 			"leads",
 			"sort",
 			"googlead",
@@ -296,48 +347,15 @@
 			"contact",
 			"(\\s)0px",
 			"0px",
-			": ",
-			"contact\"",
-			"sign up",
-			"has t",
-			"chica",
-			"bould",
-			"boulder",
-			"\\t(\\w\\w)\\t",
-			"(\\w\\w)'",
-			"t(\\w\\w)'",
-			", (\\w\\w)\\t'",
-			"^(\\w*) \\S*",
-			"#[A-f]",
-			"#\\d",
-			"darkgray",
-			"#\\d",
-			"#",
-			"color",
-			"coloren",
-			"color",
-			": ",
-			"20v",
-			"30",
-			"=\"\"",
-			"sign up",
-			"border=",
-			"img",
-			"java programming",
-			"learning pr",
-			"mailto:",
-			"’",
-			"mailto",
-			"prices",
-			"today",
-			"0.jpg"
+			": "
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"buildEditableRow",
 			".png",
 			"\\10",
 			"0",
@@ -361,7 +379,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -369,15 +387,15 @@
 					"file": "web/README.md",
 					"settings":
 					{
-						"buffer_size": 837,
+						"buffer_size": 202,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								837,
-								837
+								0,
+								0
 							]
 						],
 						"settings":
@@ -387,7 +405,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 115.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -397,15 +415,15 @@
 					"file": "minitasks.md",
 					"settings":
 					{
-						"buffer_size": 282,
+						"buffer_size": 329,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								281,
-								281
+								328,
+								328
 							]
 						],
 						"settings":
@@ -421,18 +439,68 @@
 				},
 				{
 					"buffer": 2,
-					"file": "web/src/app.coffee",
+					"file": "web/views/layout.jade",
 					"settings":
 					{
-						"buffer_size": 2410,
+						"buffer_size": 1703,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1730,
-								1730
+								382,
+								382
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "web/src/app.coffee",
+					"settings":
+					{
+						"buffer_size": 4475,
+						"regions":
+						{
+							"bookmark_e":
+							{
+								"flags": 144,
+								"regions":
+								[
+									[
+										4345,
+										4345
+									]
+								]
+							},
+							"bookmark_k":
+							{
+								"flags": 144,
+								"regions":
+								[
+									[
+										862,
+										862
+									]
+								]
+							}
+						},
+						"selection":
+						[
+							[
+								938,
+								938
 							]
 						],
 						"settings":
@@ -442,25 +510,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 655.0,
+						"translation.y": 325.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "web/app.js",
 					"settings":
 					{
-						"buffer_size": 2854,
+						"buffer_size": 5770,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1592,
-								1592
+								0,
+								0
 							]
 						],
 						"settings":
@@ -470,25 +538,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1045.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "web/public/scripts/src/views/index.coffee",
 					"settings":
 					{
-						"buffer_size": 1011,
+						"buffer_size": 1013,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								249,
-								249
+								379,
+								379
 							]
 						],
 						"settings":
@@ -504,19 +572,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "web/public/scripts/src/views/client.coffee",
 					"settings":
 					{
-						"buffer_size": 2315,
+						"buffer_size": 5233,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2191,
-								2191
+								2747,
+								2751
 							]
 						],
 						"settings":
@@ -526,58 +594,30 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 535.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "web/public/style/main.styl",
-					"settings":
-					{
-						"buffer_size": 1305,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1299,
-								1299
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/editors/Stylus.tmbundle/Syntaxes/Stylus.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 625.0,
+						"translation.y": 997.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "web/views/layout.jade",
+					"file": "web/public/style/main.styl",
 					"settings":
 					{
-						"buffer_size": 1332,
+						"buffer_size": 1392,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1146,
-								1146
+								1254,
+								1254
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Jade.tmLanguage",
+							"syntax": "Packages/Stylus/editors/Stylus.tmbundle/Syntaxes/Stylus.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -621,6 +661,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 27.0
+	},
 	"replace":
 	{
 		"height": 64.0
@@ -631,6 +675,26 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"newclico",
+				"web/public/scripts/src/views/newclient.coffee"
+			],
+			[
+				"newcl",
+				"web/public/scripts/src/views/newclient.coffee"
+			],
+			[
+				"client.js",
+				"web/public/scripts/out/views/client.js"
+			],
+			[
+				"partials.co",
+				"web/public/scripts/src/views/partials.coffee"
+			],
+			[
+				"partials.js",
+				"web/public/scripts/out/views/partials.js"
+			],
 			[
 				".styl",
 				"web/public/style/main.styl"

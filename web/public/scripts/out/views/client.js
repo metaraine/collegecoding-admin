@@ -2,7 +2,7 @@
 (function() {
   var defaultRate;
 
-  defaultRate = 55;
+  defaultRate = 65;
 
   client.views.client = Backbone.View.extend({
     events: {
@@ -85,10 +85,10 @@
       ];
     },
     build: function() {
-      var payments, rate, sessions;
+      var payments, rate, sessions, _ref, _ref1;
       sessions = this.model.get('sessions');
       payments = this.model.get('payments');
-      rate = payments.length ? payments.index(-1).rate : defaultRate;
+      rate = Math.max((sessions != null ? (_ref = sessions.index(-1)) != null ? _ref.rate : void 0 : void 0) || 0, (payments != null ? (_ref1 = payments.index(-1)) != null ? _ref1.rate : void 0 : void 0) || 0, defaultRate);
       return [
         '#page-client', [
           [
@@ -100,7 +100,7 @@
                 }, this.model.get('name')
               ], [
                 '.row-fluid.marketing', [
-                  ['.span6', [['table.def-list', [['tr', [['td', 'First Contact'], ['td', moment(this.model.get('firstContact')).format('MMMM Do, YYYY')]]], this.buildEditableRow('Client Type', 'clientType'), this.buildEditableRow('Client Status', 'clientStatus'), this.buildEditableRow('Lead Status', 'leadStatus'), this.buildEditableRow('Platform', 'platform'), this.buildEditableRow('Email', 'email'), this.buildEditableRow('Timezone', 'timezone'), this.buildEditableRow('City', 'city'), this.buildEditableRow('State', 'state'), this.buildEditableRow('Phone', 'phone'), this.buildEditableRow('School', 'school'), this.buildEditableRow('Program', 'schoolProgram'), this.buildEditableRow('Class', 'schoolClass'), this.buildEditableRow('Referrer', 'referrer')]]]], [
+                  ['.span6', [['table.def-list', [['tr', [['td', 'Current Rate'], ['td', rate]]], ['tr', [['td', 'First Contact'], ['td', moment(this.model.get('firstContact')).format('MMMM Do, YYYY')]]], this.buildEditableRow('Client Type', 'clientType'), this.buildEditableRow('Client Status', 'clientStatus'), this.buildEditableRow('Lead Status', 'leadStatus'), this.buildEditableRow('Platform', 'platform'), this.buildEditableRow('Email', 'email'), this.buildEditableRow('Timezone', 'timezone'), this.buildEditableRow('City', 'city'), this.buildEditableRow('State', 'state'), this.buildEditableRow('Phone', 'phone'), this.buildEditableRow('School', 'school'), this.buildEditableRow('Program', 'schoolProgram'), this.buildEditableRow('Class', 'schoolClass'), this.buildEditableRow('Referrer', 'referrer')]]]], [
                     '.span6', [
                       ['h4', 'Balance'], ['table.def-list', this.buildBalance()], ['h4', 'Sessions'], ['table.def-list', sessions.map(this.buildSession)], [
                         'a#add-session', {
@@ -115,16 +115,21 @@
                               value: moment().format('M/D/YY')
                             }
                           ], [
-                            'input.input-mini', {
+                            'input.input-itty', {
                               name: 'duration',
                               type: 'text',
                               value: 1
                             }
                           ], [
-                            'input.input-mini', {
+                            'input.input-itty', {
                               name: 'rate',
                               type: 'text',
                               value: rate
+                            }
+                          ], [
+                            'input', {
+                              name: 'notes',
+                              type: 'text'
                             }
                           ], ['button.add.btn', 'Add'], ['button.cancel.btn.btn-link', 'Cancel']
                         ]
@@ -141,16 +146,21 @@
                               value: moment().format('M/D/YY')
                             }
                           ], [
-                            'input.input-mini', {
+                            'input.input-itty', {
                               name: 'amount',
                               type: 'text',
                               value: 1
                             }
                           ], [
-                            'input.input-mini', {
+                            'input.input-itty', {
                               name: 'rate',
                               type: 'text',
                               value: rate
+                            }
+                          ], [
+                            'input', {
+                              name: 'notes',
+                              type: 'text'
                             }
                           ], ['button.add.btn', 'Add'], ['button.cancel.btn.btn-link', 'Cancel']
                         ]

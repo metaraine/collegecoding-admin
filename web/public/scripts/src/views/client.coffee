@@ -1,4 +1,4 @@
-defaultRate = 55
+defaultRate = 65
 
 client.views.client = Backbone.View.extend
 
@@ -76,7 +76,7 @@ client.views.client = Backbone.View.extend
   build: () ->
     sessions = this.model.get('sessions')
     payments = this.model.get('payments')
-    rate = if payments.length then payments.index(-1).rate else defaultRate
+    rate = Math.max(sessions?.index(-1)?.rate or 0, payments?.index(-1)?.rate or 0, defaultRate)
     ['#page-client', [
       ['.container-narrow', [
         new client.partials.Header(),
@@ -85,6 +85,10 @@ client.views.client = Backbone.View.extend
 
           ['.span6', [
             ['table.def-list', [
+              ['tr', [
+                ['td', 'Current Rate']
+                ['td', rate]
+              ]]
               ['tr', [
                 ['td', 'First Contact']
                 ['td', moment(this.model.get('firstContact')).format('MMMM Do, YYYY')]
@@ -116,8 +120,9 @@ client.views.client = Backbone.View.extend
             ['a#add-session', { href: '#' }, 'Add']
             ['form#add-session-form.form-inline.hide', [
               ['input.input-mini', { name: 'date', type: 'text', value: moment().format('M/D/YY') }]
-              ['input.input-mini', { name: 'duration', type: 'text', value: 1 }]
-              ['input.input-mini', { name: 'rate', type: 'text', value: rate }]
+              ['input.input-itty', { name: 'duration', type: 'text', value: 1 }]
+              ['input.input-itty', { name: 'rate', type: 'text', value: rate }]
+              ['input', { name: 'notes', type: 'text' }]
               ['button.add.btn', 'Add']
               ['button.cancel.btn.btn-link', 'Cancel']
             ]]
@@ -129,8 +134,9 @@ client.views.client = Backbone.View.extend
             ['a#add-payment', { href: '#' }, 'Add']
             ['form#add-payment-form.form-inline.hide', [
               ['input.input-mini', { name: 'date', type: 'text', value: moment().format('M/D/YY') }]
-              ['input.input-mini', { name: 'amount', type: 'text', value: 1 }]
-              ['input.input-mini', { name: 'rate', type: 'text', value: rate }]
+              ['input.input-itty', { name: 'amount', type: 'text', value: 1 }]
+              ['input.input-itty', { name: 'rate', type: 'text', value: rate }]
+              ['input', { name: 'notes', type: 'text' }]
               ['button.add.btn', 'Add']
               ['button.cancel.btn.btn-link', 'Cancel']
             ]]

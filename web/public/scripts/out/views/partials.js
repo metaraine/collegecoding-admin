@@ -52,34 +52,4 @@
     }
   });
 
-  $(function() {
-    var searchBuffer, startCapturing;
-    startCapturing = false;
-    searchBuffer = '';
-    return $(document).bind('keypress', function(e) {
-      var char;
-      char = String.fromCharCode(e.keyCode);
-      if (char === '/') {
-        if (startCapturing && searchBuffer === '') {
-          return location.href = '/';
-        } else {
-          searchBuffer = '';
-          startCapturing = true;
-          return $('#client-search').modal().on('shown', function() {
-            startCapturing = false;
-            return $('#client-search .search-box').focus().val(searchBuffer).keydown(function(e) {
-              var name;
-              if (e.keyCode === 13) {
-                name = $('#client-search .search-box').val();
-                return location.href = name ? '/client/' + name : '/';
-              }
-            });
-          });
-        }
-      } else if (startCapturing) {
-        return searchBuffer += char;
-      }
-    });
-  });
-
 }).call(this);

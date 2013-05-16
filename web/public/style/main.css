@@ -16,6 +16,7 @@ h1,
 h2,
 h3 {
   font-weight: normal;
+  line-height: 1.5em;
 }
 a {
   text-decoration: none;
@@ -80,11 +81,6 @@ a.muted {
   padding-right: 15px;
   white-space: nowrap;
 }
-h1[contenteditable],
-h2[contenteditable],
-h3[contenteditable],
-h4[contenteditable],
-h5[contenteditable],
-h6[contenteditable] {
-  display: inline-block;
+.input-itty {
+  width: 2em;
 }

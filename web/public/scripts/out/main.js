@@ -28,7 +28,7 @@
   };
 
   attachGlobalEvents = function() {
-    var searchBuffer, startCapturing;
+    var i, searchBuffer, startCapturing, _i;
     startCapturing = false;
     searchBuffer = '';
     $('[contenteditable],input,textarea').focus(function() {
@@ -38,6 +38,25 @@
     }).keyup(function(e) {
       if (e.keyCode === 27) {
         return $(e.target).blur();
+      }
+    });
+    for (i = _i = 1; _i <= 6; i = ++_i) {
+      $('.rich').on('keydown', null, 'alt+meta+' + i, (function(i) {
+        return function() {
+          var selNode;
+          selNode = $(window.getSelection().baseNode);
+          if (selNode.parent("h1,h2,h3,h4,h5").length) {
+            selNode.unwrap();
+          }
+          return selNode.wrap("<h" + i + ">");
+        };
+      })(i));
+    }
+    $('.rich').on('keydown', null, 'alt+meta+0', function() {
+      var selNode;
+      selNode = $(window.getSelection().baseNode);
+      if (selNode.parent("h1,h2,h3,h4,h5").length) {
+        return selNode.unwrap();
       }
     });
     return $(document).bind('keypress', function(e) {

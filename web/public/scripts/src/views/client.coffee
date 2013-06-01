@@ -76,7 +76,7 @@ client.views.client = Backbone.View.extend
   build: () ->
     sessions = this.model.get('sessions')
     payments = this.model.get('payments')
-    rate = Math.max(sessions?.index(-1)?.rate or 0, payments?.index(-1)?.rate or 0, defaultRate)
+    rate = payments?.index(-1)?.rate or defaultRate
     ['#page-client', [
       ['.container-narrow', [
         new client.partials.Header(),
@@ -144,7 +144,7 @@ client.views.client = Backbone.View.extend
 
           ['.span12', [
             ['h4', 'Notes']
-            ['p', { 'data-name': 'notes', contenteditable: true, html: true }, this.model.get 'notes']
+            ['p.rich', { 'data-name': 'notes', contenteditable: true, html: true }, this.model.get 'notes']
           ]]
         ]]
 

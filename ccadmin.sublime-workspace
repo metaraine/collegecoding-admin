@@ -35,7 +35,7 @@
 			"file": "web/README.md",
 			"settings":
 			{
-				"buffer_size": 202,
+				"buffer_size": 203,
 				"line_ending": "Unix"
 			}
 		},
@@ -84,7 +84,7 @@
 			"file": "web/public/scripts/src/views/client.coffee",
 			"settings":
 			{
-				"buffer_size": 5233,
+				"buffer_size": 5650,
 				"line_ending": "Unix"
 			}
 		},
@@ -92,7 +92,7 @@
 			"file": "web/public/style/main.styl",
 			"settings":
 			{
-				"buffer_size": 1392,
+				"buffer_size": 1415,
 				"line_ending": "Unix"
 			}
 		}
@@ -121,6 +121,8 @@
 	},
 	"file_history":
 	[
+		"/Users/raine/tmp/mocha-test/test.js",
+		"/Users/raine/test/mocha-test/test.js",
 		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/src/views/newclient.coffee",
 		"/Users/raine/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/raine/Projects/collegecoding-admin/web/public/scripts/out/views/client.js",
@@ -209,7 +211,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 95.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -220,6 +222,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"this.model.get('pa",
+			"add-payment-form",
 			"Lead",
 			"lead",
 			"notes",
@@ -345,9 +349,7 @@
 			"anchor",
 			"anchorname",
 			"contact",
-			"(\\s)0px",
-			"0px",
-			": "
+			"(\\s)0px"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -379,7 +381,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -387,15 +389,15 @@
 					"file": "web/README.md",
 					"settings":
 					{
-						"buffer_size": 202,
+						"buffer_size": 203,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								70,
+								176
 							]
 						],
 						"settings":
@@ -449,8 +451,8 @@
 						"selection":
 						[
 							[
-								382,
-								382
+								381,
+								381
 							]
 						],
 						"settings":
@@ -499,8 +501,8 @@
 						"selection":
 						[
 							[
-								938,
-								938
+								937,
+								937
 							]
 						],
 						"settings":
@@ -510,7 +512,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 325.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -555,8 +557,8 @@
 						"selection":
 						[
 							[
-								379,
-								379
+								378,
+								378
 							]
 						],
 						"settings":
@@ -576,15 +578,15 @@
 					"file": "web/public/scripts/src/views/client.coffee",
 					"settings":
 					{
-						"buffer_size": 5233,
+						"buffer_size": 5650,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2747,
-								2751
+								4885,
+								4885
 							]
 						],
 						"settings":
@@ -594,7 +596,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 997.0,
+						"translation.y": 1747.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -604,15 +606,15 @@
 					"file": "web/public/style/main.styl",
 					"settings":
 					{
-						"buffer_size": 1392,
+						"buffer_size": 1415,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1254,
-								1254
+								1258,
+								1258
 							]
 						],
 						"settings":
@@ -622,7 +624,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 745.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

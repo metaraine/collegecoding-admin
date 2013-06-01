@@ -28,6 +28,23 @@ attachGlobalEvents = ->
       if e.keyCode is 27 # escape key
         $(e.target).blur()
 
+  # rich editing shortcuts for contenteditable elements
+  for i in [1..6]
+    $('.rich').on 'keydown', null, 'alt+meta+'+i, ((i)->
+      ->
+        selNode = $(window.getSelection().baseNode)
+        if selNode.parent("h1,h2,h3,h4,h5").length
+          selNode.unwrap()
+        selNode.wrap("<h#{i}>")
+    )(i)
+      
+
+  $('.rich').on 'keydown', null, 'alt+meta+0', ->
+    selNode = $(window.getSelection().baseNode)
+    if selNode.parent("h1,h2,h3,h4,h5").length
+      selNode.unwrap()
+    
+
   # global search with '/'
   $(document).bind 'keypress', (e)->
     char = String.fromCharCode e.keyCode

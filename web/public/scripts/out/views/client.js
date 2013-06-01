@@ -85,10 +85,10 @@
       ];
     },
     build: function() {
-      var payments, rate, sessions, _ref, _ref1;
+      var payments, rate, sessions, _ref;
       sessions = this.model.get('sessions');
       payments = this.model.get('payments');
-      rate = Math.max((sessions != null ? (_ref = sessions.index(-1)) != null ? _ref.rate : void 0 : void 0) || 0, (payments != null ? (_ref1 = payments.index(-1)) != null ? _ref1.rate : void 0 : void 0) || 0, defaultRate);
+      rate = (payments != null ? (_ref = payments.index(-1)) != null ? _ref.rate : void 0 : void 0) || defaultRate;
       return [
         '#page-client', [
           [
@@ -169,7 +169,7 @@
                   ], [
                     '.span12', [
                       ['h4', 'Notes'], [
-                        'p', {
+                        'p.rich', {
                           'data-name': 'notes',
                           contenteditable: true,
                           html: true

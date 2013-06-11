@@ -1,0 +1,15 @@
+{
+  "name": "ccadmin-backup",
+  "version": "0.0.0",
+  "description": "Backs up College Coding Admin's MongoDB instance to a Google Drive folder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Raine Lourie",
+  "license": "Copyright",
+  "dependencies": {
+    "cron": "~1.0.1"
+  }
+}
